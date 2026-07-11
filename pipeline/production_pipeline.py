@@ -235,9 +235,9 @@ def generate_krea_image(prompt_info):
 
     # Prepare LoRAs
     if "lora_ids" in prompt_info:  # All together scene
-        loras = [{"id": lora_id, "strength": 0.30} for lora_id in prompt_info['lora_ids']]
+        loras = [{"id": lora_id, "strength": 0.85} for lora_id in prompt_info['lora_ids']]
     else:  # Single kid
-        loras = [{"id": prompt_info['lora_id'], "strength": 0.30}]
+        loras = [{"id": prompt_info['lora_id'], "strength": 0.85}]
 
     payload = {
         "prompt": prompt_info['prompt'],
