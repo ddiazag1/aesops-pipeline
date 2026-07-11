@@ -55,8 +55,13 @@ def scrape_youtube_autocomplete(seed: str, language: str = "en") -> List[str]:
         if response.status_code != 200:
             return []
         text = response.text
-        start = text.index('[')
-        data = json.loads(text[start:])
+        # Response is JSONP like: window.google.ac.h(...) -- extract the JSON array
+        # Find the outermost balanced brackets
+        start = text.find('(')
+        end = text.rfind(')')
+        if start == -1 or end == -1:
+            return []
+        data = json.loads(text[start + 1:end])
         if len(data) > 1 and isinstance(data[1], list):
             return [item[0] if isinstance(item, list) else str(item) for item in data[1]]
         return []
