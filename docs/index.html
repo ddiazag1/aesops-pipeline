@@ -180,18 +180,6 @@
       <input type="text" id="topic-input" placeholder='Type anything: "Red Color", "Farm Animals", "The Letter A"...'>
 
       <div style="margin-top:12px">
-        <label for="type-select">Topic Type</label>
-        <select id="type-select">
-          <option value="color">Color</option>
-          <option value="number">Number</option>
-          <option value="shape">Shape</option>
-          <option value="animal">Animal</option>
-          <option value="size">Size</option>
-          <option value="opposite">Opposite</option>
-        </select>
-      </div>
-
-      <div style="margin-top:12px">
         <label>Include Kids</label>
         <div class="kid-toggles">
           <button class="kid-btn active" data-kid="liam" onclick="toggleKid(this)">Liam</button>
@@ -319,7 +307,6 @@ async function triggerPipeline() {
 
   const inputs = {
     topic: topic,
-    topic_type: document.getElementById('type-select').value,
     skip_youtube: String(document.getElementById('skip-youtube').checked),
     skip_kdp: String(document.getElementById('skip-kdp').checked),
   };

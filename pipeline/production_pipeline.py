@@ -1353,17 +1353,31 @@ def run_daily_production(args=None):
 
     # Pick topic: from CLI args or random
     if args and args.topic:
-        # Find matching topic from EDUCATIONAL_TOPICS or create a custom one
+        # Find matching topic from EDUCATIONAL_TOPICS or auto-detect type
         topic = None
-        topic_type = args.topic_type or "color"
         for t in EDUCATIONAL_TOPICS:
             if t['topic'].lower() == args.topic.lower():
                 topic = t
                 break
         if not topic:
-            # Custom topic
+            # Auto-detect topic type from the input string
+            topic_lower = args.topic.lower()
+            if args.topic_type:
+                detected_type = args.topic_type
+            elif any(c in topic_lower for c in ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'color', 'colour']):
+                detected_type = 'color'
+            elif any(n in topic_lower for n in ['count', 'number', 'digit', '1', '2', '3', '4', '5']):
+                detected_type = 'number'
+            elif any(s in topic_lower for s in ['circle', 'square', 'triangle', 'star', 'shape', 'rectangle', 'oval']):
+                detected_type = 'shape'
+            elif any(a in topic_lower for a in ['animal', 'farm', 'wild', 'dog', 'cat', 'lion', 'elephant', 'bird']):
+                detected_type = 'animal'
+            elif any(o in topic_lower for o in ['big', 'small', 'up', 'down', 'hot', 'cold', 'opposite', 'fast', 'slow']):
+                detected_type = 'opposite'
+            else:
+                detected_type = 'color'
             topic = {
-                "type": topic_type,
+                "type": detected_type,
                 "topic": args.topic,
                 "keyword": args.topic.lower(),
                 "emoji": "star"

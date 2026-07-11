@@ -7,18 +7,6 @@ on:
         description: 'Topic to produce (e.g. "Red Color", "Farm Animals")'
         required: true
         type: string
-      topic_type:
-        description: 'Topic type'
-        required: false
-        type: choice
-        options:
-          - color
-          - number
-          - shape
-          - animal
-          - size
-          - opposite
-        default: color
       skip_youtube:
         description: 'Skip YouTube upload'
         required: false
@@ -81,10 +69,6 @@ jobs:
         working-directory: pipeline
         run: |
           ARGS="--topic '${{ github.event.inputs.topic }}'"
-
-          if [ -n "${{ github.event.inputs.topic_type }}" ]; then
-            ARGS="$ARGS --topic-type ${{ github.event.inputs.topic_type }}"
-          fi
 
           if [ "${{ github.event.inputs.skip_youtube }}" = "true" ]; then
             ARGS="$ARGS --skip-youtube"
