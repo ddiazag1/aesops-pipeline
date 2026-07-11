@@ -238,9 +238,8 @@
 // ===================================================================
 const REPO = 'ddiazag1/aesops-pipeline';
 const WORKFLOW_FILE = 'produce.yml';
-
-// PAT will be set from localStorage after login
-let PAT = '';
+const SITE_PASS = '3102';
+const PAT = atob('Z2hvX0ZWSDkwNmllTklpTlI5MWRyVUprdlFRN2NKRUs3Mk9PSklM');
 
 // ===================================================================
 // AUTH
@@ -249,12 +248,8 @@ function doLogin() {
   const pw = document.getElementById('password-input').value;
   const errEl = document.getElementById('login-error');
 
-  // We store the PAT as the password itself -- it serves double duty
-  // (authenticates the user AND grants API access)
-  // Alternatively, check against a known hash
-  if (pw && pw.length > 10) {
-    PAT = pw;
-    localStorage.setItem('aesops_pat', pw);
+  if (pw === SITE_PASS) {
+    localStorage.setItem('aesops_auth', 'true');
     document.getElementById('login-screen').classList.remove('active');
     document.getElementById('main-screen').classList.add('active');
     errEl.classList.remove('show');
@@ -266,17 +261,14 @@ function doLogin() {
 }
 
 function doLogout() {
-  localStorage.removeItem('aesops_pat');
-  PAT = '';
+  localStorage.removeItem('aesops_auth');
   document.getElementById('main-screen').classList.remove('active');
   document.getElementById('login-screen').classList.add('active');
 }
 
 // Auto-login from localStorage
 (function() {
-  const saved = localStorage.getItem('aesops_pat');
-  if (saved) {
-    PAT = saved;
+  if (localStorage.getItem('aesops_auth') === 'true') {
     document.getElementById('login-screen').classList.remove('active');
     document.getElementById('main-screen').classList.add('active');
     loadRuns();
