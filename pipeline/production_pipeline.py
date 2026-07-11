@@ -337,32 +337,126 @@ def generate_all_images(prompts, output_folder):
     return image_folder
 
 # ===================================================================
-# STEP 3B: ANIMATE IMAGES WITH FFMPEG KEN BURNS
+# STEP 3B: ANIMATE IMAGES (HAILUO PRIMARY, KEN BURNS FALLBACK)
 # ===================================================================
 
-# Motion patterns for variety across scenes
+def upload_image_to_krea(image_path):
+    """Upload image to Krea assets to get a URL for animation"""
+    import requests
+    try:
+        with open(image_path, 'rb') as f:
+            files = {'file': (image_path.name, f, 'image/png')}
+            response = requests.post(
+                "https://api.krea.ai/assets",
+                headers={"Authorization": f"Bearer {KREA_API_KEY}"},
+                files=files, data={'description': 'Scene image'}
+            )
+        if response.status_code != 200:
+            return None
+        return response.json().get("image_url")
+    except Exception:
+        return None
+
+
+def animate_image_hailuo(image_url, movement_prompt):
+    """Animate image using Krea Hailuo video API. Returns video URL or None."""
+    import requests
+    response = requests.post(
+        "https://api.krea.ai/generate/video/minimax/hailuo-2.3",
+        headers={
+            "Authorization": f"Bearer {KREA_API_KEY}",
+            "Content-Type": "application/json"
+        },
+        json={
+            "prompt": movement_prompt,
+            "start_image": image_url,
+            "duration": SCENE_DURATION,
+            "resolution": "768p",
+            "expand_prompt": False
+        }
+    )
+    if response.status_code != 200:
+        print(f"    [WARN] Hailuo API: {response.status_code}")
+        return None
+
+    job_id = response.json()["job_id"]
+    print(f"      Job: {job_id}")
+
+    for attempt in range(180):
+        time.sleep(2)
+        poll = requests.get(
+            f"https://api.krea.ai/jobs/{job_id}",
+            headers={"Authorization": f"Bearer {KREA_API_KEY}"}
+        )
+        if poll.status_code != 200:
+            continue
+        job_data = poll.json()
+        status = job_data.get("status")
+        if status == "completed":
+            result = job_data.get("result", {})
+            if "urls" in result and result["urls"]:
+                return result["urls"][0]
+            elif "url" in result:
+                return result["url"]
+            return None
+        elif status == "failed":
+            return None
+        if attempt % 30 == 0 and attempt > 0:
+            print(f"      Still animating... ({attempt * 2}s)")
+    return None
+
+
+# Ken Burns fallback patterns
 KENBURNS_PATTERNS = [
-    # Slow zoom in to center
     "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
-    # Slow zoom out from center
     "scale=8000:8000,zoompan=z='if(eq(on,1),1.4,max(zoom-0.0015,1.0))':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
-    # Pan left to right
     "scale=8000:8000,zoompan=z='1.3':x='if(eq(on,1),0,min(x+2,iw-iw/zoom))':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
-    # Pan right to left
     "scale=8000:8000,zoompan=z='1.3':x='if(eq(on,1),iw-iw/zoom,max(x-2,0))':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
-    # Zoom in to top-left
     "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='iw/4-(iw/zoom/2)':y='ih/4-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
-    # Zoom in to bottom-right
     "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='3*iw/4-(iw/zoom/2)':y='3*ih/4-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
 ]
 
 
+def kenburns_fallback(image_path, video_out, scene_num):
+    """Apply Ken Burns zoom/pan effect as fallback animation."""
+    pattern = KENBURNS_PATTERNS[scene_num % len(KENBURNS_PATTERNS)]
+    dur_frames = SCENE_DURATION * VIDEO_FPS
+    vf = pattern.format(dur=dur_frames, w=VIDEO_WIDTH, h=VIDEO_HEIGHT, fps=VIDEO_FPS)
+    result = subprocess.run([
+        'ffmpeg', '-y', '-i', str(image_path),
+        '-vf', vf,
+        '-c:v', 'libx264', '-preset', 'fast', '-crf', '23',
+        '-pix_fmt', 'yuv420p', str(video_out)
+    ], capture_output=True, text=True)
+    return result.returncode == 0
+
+
 def animate_all_scenes(prompts, image_folder, output_folder):
-    """Animate scene images using ffmpeg Ken Burns zoom/pan effects"""
+    """Animate scenes: try Hailuo first, fall back to Ken Burns if unavailable."""
+    import requests
 
     print("\n" + "="*70)
-    print("STEP 3B: ANIMATING IMAGES (KEN BURNS)")
+    print("STEP 3B: ANIMATING IMAGES")
     print("="*70)
+
+    # Test if Hailuo is available with a quick probe
+    use_hailuo = True
+    try:
+        probe = requests.post(
+            "https://api.krea.ai/generate/video/minimax/hailuo-2.3",
+            headers={"Authorization": f"Bearer {KREA_API_KEY}", "Content-Type": "application/json"},
+            json={"prompt": "test", "start_image": "https://example.com/test.png", "duration": 1}
+        )
+        if probe.status_code == 402:
+            use_hailuo = False
+            print("  Hailuo API unavailable (billing), using Ken Burns fallback")
+    except Exception:
+        use_hailuo = False
+
+    if use_hailuo:
+        print("  Using Krea Hailuo for animation")
+    else:
+        print("  Using ffmpeg Ken Burns for animation")
 
     animated = 0
     for prompt_info in prompts:
@@ -380,25 +474,42 @@ def animate_all_scenes(prompts, image_folder, output_folder):
             animated += 1
             continue
 
-        # Pick a motion pattern (cycles through for variety)
-        pattern = KENBURNS_PATTERNS[scene_num % len(KENBURNS_PATTERNS)]
-        dur_frames = SCENE_DURATION * VIDEO_FPS
-        vf = pattern.format(dur=dur_frames, w=VIDEO_WIDTH, h=VIDEO_HEIGHT, fps=VIDEO_FPS)
+        if use_hailuo:
+            # Upload image to get Krea-hosted URL
+            print(f"  Scene {scene_num:02d} ({prompt_info['kid']}): uploading...")
+            image_url = upload_image_to_krea(image_path)
+            if not image_url:
+                print(f"    [WARN] Upload failed, using Ken Burns")
+                if kenburns_fallback(image_path, video_out, scene_num):
+                    animated += 1
+                    print(f"    [OK] Ken Burns applied")
+                continue
 
-        result = subprocess.run([
-            'ffmpeg', '-y',
-            '-i', str(image_path),
-            '-vf', vf,
-            '-c:v', 'libx264', '-preset', 'fast', '-crf', '23',
-            '-pix_fmt', 'yuv420p',
-            str(video_out)
-        ], capture_output=True, text=True)
+            movement = prompt_info.get('object', 'gentle subtle movement')
+            print(f"  Scene {scene_num:02d}: animating with Hailuo...")
+            video_url = animate_image_hailuo(image_url, movement)
+            if video_url:
+                vid_response = requests.get(video_url)
+                if vid_response.status_code == 200:
+                    with open(video_out, 'wb') as f:
+                        f.write(vid_response.content)
+                    animated += 1
+                    print(f"    [OK] Hailuo video saved")
+                    time.sleep(2)
+                    continue
 
-        if result.returncode == 0:
-            animated += 1
-            print(f"  Scene {scene_num:02d}: [OK] Ken Burns applied")
+            # Hailuo failed for this scene, Ken Burns fallback
+            print(f"    [WARN] Hailuo failed, using Ken Burns")
+            if kenburns_fallback(image_path, video_out, scene_num):
+                animated += 1
+                print(f"    [OK] Ken Burns applied")
         else:
-            print(f"  Scene {scene_num:02d}: [ERROR] {result.stderr[:200]}")
+            # Ken Burns only
+            if kenburns_fallback(image_path, video_out, scene_num):
+                animated += 1
+                print(f"  Scene {scene_num:02d}: [OK] Ken Burns applied")
+            else:
+                print(f"  Scene {scene_num:02d}: [ERROR] Ken Burns failed")
 
     print(f"\n[OK] Animated {animated}/{len(prompts)} scenes")
 
