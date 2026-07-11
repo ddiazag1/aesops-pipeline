@@ -337,105 +337,31 @@ def generate_all_images(prompts, output_folder):
     return image_folder
 
 # ===================================================================
-# STEP 3B: ANIMATE IMAGES WITH KREA HAILUO
+# STEP 3B: ANIMATE IMAGES WITH FFMPEG KEN BURNS
 # ===================================================================
 
-def upload_image_to_krea(image_path):
-    """Upload image to Krea assets to get a URL for animation"""
-    import requests
-
-    try:
-        with open(image_path, 'rb') as f:
-            files = {'file': (image_path.name, f, 'image/png')}
-            data = {'description': 'Scene image'}
-
-            response = requests.post(
-                "https://api.krea.ai/assets",
-                headers={"Authorization": f"Bearer {KREA_API_KEY}"},
-                files=files,
-                data=data
-            )
-
-        if response.status_code != 200:
-            print(f"    [ERROR] Upload failed: {response.status_code}")
-            return None
-
-        asset_url = response.json().get("image_url")
-        return asset_url
-    except Exception as e:
-        print(f"    [ERROR] Upload error: {e}")
-        return None
-
-
-def animate_image_krea(image_url, movement_prompt):
-    """Animate image using Krea Hailuo video API"""
-    import requests
-
-    response = requests.post(
-        "https://api.krea.ai/generate/video/minimax/hailuo-2.3",
-        headers={
-            "Authorization": f"Bearer {KREA_API_KEY}",
-            "Content-Type": "application/json"
-        },
-        json={
-            "prompt": movement_prompt,
-            "start_image": image_url,
-            "duration": SCENE_DURATION,
-            "resolution": "768p",
-            "expand_prompt": False
-        }
-    )
-
-    if response.status_code != 200:
-        print(f"    [ERROR] Hailuo API: {response.status_code} {response.text[:200]}")
-        return None
-
-    job_id = response.json()["job_id"]
-    print(f"      Job: {job_id}")
-
-    for attempt in range(180):  # Up to 6 minutes
-        time.sleep(2)
-
-        poll = requests.get(
-            f"https://api.krea.ai/jobs/{job_id}",
-            headers={"Authorization": f"Bearer {KREA_API_KEY}"}
-        )
-
-        if poll.status_code != 200:
-            continue
-
-        job_data = poll.json()
-        status = job_data.get("status")
-
-        if status == "completed":
-            result = job_data.get("result", {})
-            if "urls" in result and isinstance(result["urls"], list) and len(result["urls"]) > 0:
-                video_url = result["urls"][0]
-            elif "url" in result:
-                video_url = result["url"]
-            else:
-                print(f"    [ERROR] No URL in response")
-                return None
-
-            print(f"    [OK] Animated ({attempt * 2}s)")
-            return video_url
-        elif status == "failed":
-            print(f"    [ERROR] Animation failed")
-            return None
-
-        if attempt % 30 == 0 and attempt > 0:
-            print(f"      Still animating... ({attempt * 2}s)")
-
-    print(f"    [ERROR] Animation timeout")
-    return None
+# Motion patterns for variety across scenes
+KENBURNS_PATTERNS = [
+    # Slow zoom in to center
+    "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+    # Slow zoom out from center
+    "scale=8000:8000,zoompan=z='if(eq(on,1),1.4,max(zoom-0.0015,1.0))':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+    # Pan left to right
+    "scale=8000:8000,zoompan=z='1.3':x='if(eq(on,1),0,min(x+2,iw-iw/zoom))':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+    # Pan right to left
+    "scale=8000:8000,zoompan=z='1.3':x='if(eq(on,1),iw-iw/zoom,max(x-2,0))':y='ih/2-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+    # Zoom in to top-left
+    "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='iw/4-(iw/zoom/2)':y='ih/4-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+    # Zoom in to bottom-right
+    "scale=8000:8000,zoompan=z='min(zoom+0.0015,1.4)':x='3*iw/4-(iw/zoom/2)':y='3*ih/4-(ih/zoom/2)':d={dur}:s={w}x{h}:fps={fps}",
+]
 
 
 def animate_all_scenes(prompts, image_folder, output_folder):
-    """Animate all scene images using Krea Hailuo"""
-    import requests
+    """Animate scene images using ffmpeg Ken Burns zoom/pan effects"""
 
     print("\n" + "="*70)
-    print("STEP 3B: ANIMATING IMAGES WITH KREA HAILUO")
+    print("STEP 3B: ANIMATING IMAGES (KEN BURNS)")
     print("="*70)
 
     animated = 0
@@ -450,32 +376,29 @@ def animate_all_scenes(prompts, image_folder, output_folder):
 
         video_out = output_folder / f"scene_{scene_num:02d}.mp4"
         if video_out.exists():
-            print(f"  Scene {scene_num:02d}: already animated, skipping")
+            print(f"  Scene {scene_num:02d}: already exists, skipping")
             animated += 1
             continue
 
-        print(f"  Scene {scene_num:02d} ({prompt_info['kid']}): uploading...")
-        image_url = upload_image_to_krea(image_path)
-        if not image_url:
-            continue
+        # Pick a motion pattern (cycles through for variety)
+        pattern = KENBURNS_PATTERNS[scene_num % len(KENBURNS_PATTERNS)]
+        dur_frames = SCENE_DURATION * VIDEO_FPS
+        vf = pattern.format(dur=dur_frames, w=VIDEO_WIDTH, h=VIDEO_HEIGHT, fps=VIDEO_FPS)
 
-        movement = prompt_info.get('object', 'gentle subtle movement')
-        print(f"  Scene {scene_num:02d}: animating...")
-        video_url = animate_image_krea(image_url, movement)
-        if not video_url:
-            continue
+        result = subprocess.run([
+            'ffmpeg', '-y',
+            '-i', str(image_path),
+            '-vf', vf,
+            '-c:v', 'libx264', '-preset', 'fast', '-crf', '23',
+            '-pix_fmt', 'yuv420p',
+            str(video_out)
+        ], capture_output=True, text=True)
 
-        # Download video
-        vid_response = requests.get(video_url)
-        if vid_response.status_code == 200:
-            with open(video_out, 'wb') as f:
-                f.write(vid_response.content)
+        if result.returncode == 0:
             animated += 1
-            print(f"    [OK] Saved: {video_out.name}")
+            print(f"  Scene {scene_num:02d}: [OK] Ken Burns applied")
         else:
-            print(f"    [ERROR] Download failed: {vid_response.status_code}")
-
-        time.sleep(2)  # Rate limit
+            print(f"  Scene {scene_num:02d}: [ERROR] {result.stderr[:200]}")
 
     print(f"\n[OK] Animated {animated}/{len(prompts)} scenes")
 
