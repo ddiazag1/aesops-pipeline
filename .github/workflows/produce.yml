@@ -1,0 +1,148 @@
+name: Produce Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Topic to produce (e.g. "Red Color", "Farm Animals")'
+        required: true
+        type: string
+      topic_type:
+        description: 'Topic type'
+        required: false
+        type: choice
+        options:
+          - color
+          - number
+          - shape
+          - animal
+          - size
+          - opposite
+        default: color
+      skip_youtube:
+        description: 'Skip YouTube upload'
+        required: false
+        type: boolean
+        default: false
+      skip_kdp:
+        description: 'Skip KDP PDF generation'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Restore YouTube credentials
+        env:
+          YOUTUBE_CREDENTIALS_JSON: ${{ secrets.YOUTUBE_CREDENTIALS_JSON }}
+          YOUTUBE_TOKEN_PICKLE: ${{ secrets.YOUTUBE_TOKEN_PICKLE }}
+        run: |
+          if [ -n "$YOUTUBE_CREDENTIALS_JSON" ]; then
+            echo "$YOUTUBE_CREDENTIALS_JSON" | base64 -d > pipeline/youtube_credentials.json
+            echo "Restored youtube_credentials.json"
+          fi
+          if [ -n "$YOUTUBE_TOKEN_PICKLE" ]; then
+            echo "$YOUTUBE_TOKEN_PICKLE" | base64 -d > pipeline/youtube_token.pickle
+            echo "Restored youtube_token.pickle"
+          fi
+
+      - name: Run production pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KREA_API_KEY: ${{ secrets.KREA_API_KEY }}
+          YOUTUBE_CREDENTIALS_JSON: ${{ secrets.YOUTUBE_CREDENTIALS_JSON }}
+          YOUTUBE_TOKEN_PICKLE: ${{ secrets.YOUTUBE_TOKEN_PICKLE }}
+          CI: 'true'
+        working-directory: pipeline
+        run: |
+          ARGS="--topic '${{ github.event.inputs.topic }}'"
+
+          if [ -n "${{ github.event.inputs.topic_type }}" ]; then
+            ARGS="$ARGS --topic-type ${{ github.event.inputs.topic_type }}"
+          fi
+
+          if [ "${{ github.event.inputs.skip_youtube }}" = "true" ]; then
+            ARGS="$ARGS --skip-youtube"
+          fi
+
+          if [ "${{ github.event.inputs.skip_kdp }}" = "true" ]; then
+            ARGS="$ARGS --skip-kdp"
+          fi
+
+          # Always skip TikTok and Instagram in CI
+          ARGS="$ARGS --skip-tiktok --skip-instagram"
+
+          eval python production_pipeline.py $ARGS
+
+      - name: Upload KDP PDFs as artifacts
+        if: ${{ github.event.inputs.skip_kdp != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kdp-books
+          path: pipeline/videos/*/kdp/**/*.pdf
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Upload video artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: |
+            pipeline/videos/*/final_bilingual.mp4
+            pipeline/videos/*/shorts/*.mp4
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Upload results JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: pipeline/videos/*/results.json
+          if-no-files-found: warn
+
+      - name: Save refreshed YouTube token
+        if: always()
+        env:
+          YOUTUBE_TOKEN_PICKLE: ${{ secrets.YOUTUBE_TOKEN_PICKLE }}
+        run: |
+          if [ -f pipeline/youtube_token.pickle ]; then
+            NEW_TOKEN=$(base64 -w 0 pipeline/youtube_token.pickle)
+            echo "YouTube token refreshed. Update YOUTUBE_TOKEN_PICKLE secret if token was refreshed."
+            echo "TOKEN_REFRESHED=true" >> $GITHUB_ENV
+          fi
+
+      - name: Update results/latest.json
+        if: success()
+        run: |
+          # Find the most recent results.json
+          LATEST=$(find pipeline/videos -name "results.json" -type f | sort | tail -1)
+          if [ -n "$LATEST" ]; then
+            cp "$LATEST" results/latest.json
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add results/latest.json
+            git diff --cached --quiet || git commit -m "Update latest.json from pipeline run: ${{ github.event.inputs.topic }}"
+            git push || echo "Push failed (maybe concurrent run)"
+          fi

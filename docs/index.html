@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesop's Storyhouse - Pipeline Launcher</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #3b82f6;
+    --accent2: #8b5cf6;
+    --success: #22c55e;
+    --warn: #eab308;
+    --danger: #ef4444;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --border: #334155;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .container { max-width: 700px; margin: 0 auto; padding: 20px; }
+  h1 { text-align: center; font-size: 1.5em; margin: 20px 0 5px; }
+  .subtitle { text-align: center; color: var(--muted); margin-bottom: 25px; font-size: 0.9em; }
+
+  /* Login */
+  #login-screen, #main-screen { display: none; }
+  #login-screen.active, #main-screen.active { display: block; }
+  .login-box {
+    max-width: 350px; margin: 100px auto; background: var(--card);
+    border-radius: 12px; padding: 30px; text-align: center;
+    border: 1px solid var(--border);
+  }
+  .login-box h2 { margin-bottom: 20px; }
+  .login-box input {
+    width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--text); font-size: 1em; margin-bottom: 15px;
+  }
+  .login-box button { width: 100%; }
+
+  /* Cards */
+  .card {
+    background: var(--card); border-radius: 12px; padding: 20px;
+    border: 1px solid var(--border); margin-bottom: 16px;
+  }
+  .card h3 { margin-bottom: 12px; font-size: 1.1em; }
+
+  /* Inputs */
+  input[type="text"], select {
+    width: 100%; padding: 10px 14px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--bg);
+    color: var(--text); font-size: 1em;
+  }
+  input:focus, select:focus { outline: none; border-color: var(--accent); }
+  label { display: block; color: var(--muted); font-size: 0.85em; margin-bottom: 5px; }
+
+  /* Preset buttons */
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .preset-btn {
+    padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--text); cursor: pointer; font-size: 0.85em;
+    transition: all 0.2s;
+  }
+  .preset-btn:hover { border-color: var(--accent); background: rgba(59,130,246,0.1); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 12px 24px; border-radius: 8px; border: none;
+    font-size: 1em; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    width: 100%;
+  }
+  .btn-primary { background: var(--accent); color: white; }
+  .btn-primary:hover { background: #2563eb; }
+  .btn-primary:disabled { background: var(--border); cursor: not-allowed; }
+  .btn-danger { background: var(--danger); color: white; font-size: 0.85em; padding: 8px 16px; }
+
+  /* Skip toggles */
+  .toggles { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .toggle-label {
+    display: flex; align-items: center; gap: 6px; font-size: 0.85em;
+    color: var(--muted); cursor: pointer;
+  }
+  .toggle-label input { accent-color: var(--accent); }
+
+  /* Status */
+  .status-msg {
+    text-align: center; padding: 10px; border-radius: 8px;
+    margin-top: 12px; font-size: 0.9em; display: none;
+  }
+  .status-msg.show { display: block; }
+  .status-msg.success { background: rgba(34,197,94,0.15); color: var(--success); }
+  .status-msg.error { background: rgba(239,68,68,0.15); color: var(--danger); }
+  .status-msg.info { background: rgba(59,130,246,0.15); color: var(--accent); }
+
+  /* Runs table */
+  .runs-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+  .runs-table th {
+    text-align: left; padding: 8px 10px; color: var(--muted);
+    border-bottom: 1px solid var(--border); font-weight: 500;
+  }
+  .runs-table td {
+    padding: 8px 10px; border-bottom: 1px solid var(--border);
+  }
+  .badge {
+    display: inline-block; padding: 2px 10px; border-radius: 12px;
+    font-size: 0.8em; font-weight: 600;
+  }
+  .badge-success { background: rgba(34,197,94,0.2); color: var(--success); }
+  .badge-running { background: rgba(234,179,8,0.2); color: var(--warn); }
+  .badge-failed { background: rgba(239,68,68,0.2); color: var(--danger); }
+  .badge-queued { background: rgba(59,130,246,0.2); color: var(--accent); }
+  .badge-pending { background: rgba(148,163,184,0.2); color: var(--muted); }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .artifact-link { font-size: 0.8em; }
+
+  /* Spinner */
+  .spinner {
+    display: inline-block; width: 16px; height: 16px;
+    border: 2px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .logout-btn {
+    position: fixed; top: 10px; right: 15px; background: none;
+    border: 1px solid var(--border); color: var(--muted); padding: 5px 12px;
+    border-radius: 6px; cursor: pointer; font-size: 0.8em;
+  }
+  .logout-btn:hover { border-color: var(--danger); color: var(--danger); }
+
+  /* Latest result */
+  .latest-result { font-size: 0.9em; color: var(--muted); }
+  .latest-result strong { color: var(--text); }
+</style>
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen" class="active">
+  <div class="login-box">
+    <h2>Aesop's Storyhouse</h2>
+    <p style="color:var(--muted);margin-bottom:20px;font-size:0.9em">Pipeline Launcher</p>
+    <input type="password" id="password-input" placeholder="Enter password" autofocus>
+    <button class="btn btn-primary" onclick="doLogin()">Unlock</button>
+    <div id="login-error" class="status-msg error">Wrong password</div>
+  </div>
+</div>
+
+<!-- MAIN SCREEN -->
+<div id="main-screen">
+  <button class="logout-btn" onclick="doLogout()">Logout</button>
+  <div class="container">
+    <h1>Aesop's Storyhouse</h1>
+    <p class="subtitle">Video Production Pipeline</p>
+
+    <!-- PRODUCE CARD -->
+    <div class="card">
+      <h3>New Production</h3>
+
+      <label for="topic-input">Topic</label>
+      <input type="text" id="topic-input" placeholder='e.g. "Red Color", "Farm Animals"'>
+
+      <div class="presets">
+        <button class="preset-btn" onclick="setTopic('Red Color','color')">Red</button>
+        <button class="preset-btn" onclick="setTopic('Blue Color','color')">Blue</button>
+        <button class="preset-btn" onclick="setTopic('Yellow Color','color')">Yellow</button>
+        <button class="preset-btn" onclick="setTopic('Green Color','color')">Green</button>
+        <button class="preset-btn" onclick="setTopic('Counting to 5','number')">Count 5</button>
+        <button class="preset-btn" onclick="setTopic('Counting to 10','number')">Count 10</button>
+        <button class="preset-btn" onclick="setTopic('Circles','shape')">Circles</button>
+        <button class="preset-btn" onclick="setTopic('Squares','shape')">Squares</button>
+        <button class="preset-btn" onclick="setTopic('Triangles','shape')">Triangles</button>
+        <button class="preset-btn" onclick="setTopic('Stars','shape')">Stars</button>
+        <button class="preset-btn" onclick="setTopic('Farm Animals','animal')">Farm</button>
+        <button class="preset-btn" onclick="setTopic('Wild Animals','animal')">Wild</button>
+        <button class="preset-btn" onclick="setTopic('Big and Small','size')">Big/Small</button>
+        <button class="preset-btn" onclick="setTopic('Up and Down','opposite')">Up/Down</button>
+        <button class="preset-btn" onclick="setTopic('Hot and Cold','opposite')">Hot/Cold</button>
+      </div>
+
+      <div style="margin-top:12px">
+        <label for="type-select">Topic Type</label>
+        <select id="type-select">
+          <option value="color">Color</option>
+          <option value="number">Number</option>
+          <option value="shape">Shape</option>
+          <option value="animal">Animal</option>
+          <option value="size">Size</option>
+          <option value="opposite">Opposite</option>
+        </select>
+      </div>
+
+      <div class="toggles">
+        <label class="toggle-label"><input type="checkbox" id="skip-youtube"> Skip YouTube</label>
+        <label class="toggle-label"><input type="checkbox" id="skip-kdp"> Skip KDP</label>
+      </div>
+
+      <button class="btn btn-primary" id="produce-btn" onclick="triggerPipeline()" style="margin-top:16px">
+        Produce
+      </button>
+
+      <div id="produce-status" class="status-msg"></div>
+    </div>
+
+    <!-- RECENT RUNS -->
+    <div class="card">
+      <h3>Recent Runs <span id="runs-spinner" style="display:none"><span class="spinner"></span></span></h3>
+      <table class="runs-table">
+        <thead><tr><th>Topic</th><th>Status</th><th>Started</th><th>Artifacts</th></tr></thead>
+        <tbody id="runs-body">
+          <tr><td colspan="4" style="color:var(--muted);text-align:center">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- LATEST RESULT -->
+    <div class="card" id="latest-card" style="display:none">
+      <h3>Latest Result</h3>
+      <div id="latest-content" class="latest-result"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===================================================================
+// CONFIG -- These get set after login via the SITE_PASSWORD check
+// The PAT is stored as a GitHub secret and embedded at build time,
+// OR you can hardcode it here after creating it.
+// ===================================================================
+const REPO = 'ddiazag1/aesops-pipeline';
+const WORKFLOW_FILE = 'produce.yml';
+
+// PAT will be set from localStorage after login
+let PAT = '';
+
+// ===================================================================
+// AUTH
+// ===================================================================
+function doLogin() {
+  const pw = document.getElementById('password-input').value;
+  const errEl = document.getElementById('login-error');
+
+  // We store the PAT as the password itself -- it serves double duty
+  // (authenticates the user AND grants API access)
+  // Alternatively, check against a known hash
+  if (pw && pw.length > 10) {
+    PAT = pw;
+    localStorage.setItem('aesops_pat', pw);
+    document.getElementById('login-screen').classList.remove('active');
+    document.getElementById('main-screen').classList.add('active');
+    errEl.classList.remove('show');
+    loadRuns();
+    loadLatest();
+  } else {
+    errEl.classList.add('show');
+  }
+}
+
+function doLogout() {
+  localStorage.removeItem('aesops_pat');
+  PAT = '';
+  document.getElementById('main-screen').classList.remove('active');
+  document.getElementById('login-screen').classList.add('active');
+}
+
+// Auto-login from localStorage
+(function() {
+  const saved = localStorage.getItem('aesops_pat');
+  if (saved) {
+    PAT = saved;
+    document.getElementById('login-screen').classList.remove('active');
+    document.getElementById('main-screen').classList.add('active');
+    loadRuns();
+    loadLatest();
+  }
+
+  // Enter key on password field
+  document.getElementById('password-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
+  });
+})();
+
+// ===================================================================
+// TOPIC PRESETS
+// ===================================================================
+function setTopic(topic, type) {
+  document.getElementById('topic-input').value = topic;
+  document.getElementById('type-select').value = type;
+}
+
+// ===================================================================
+// TRIGGER PIPELINE
+// ===================================================================
+async function triggerPipeline() {
+  const topic = document.getElementById('topic-input').value.trim();
+  if (!topic) {
+    showStatus('produce-status', 'Enter a topic first', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('produce-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Triggering...';
+
+  const inputs = {
+    topic: topic,
+    topic_type: document.getElementById('type-select').value,
+    skip_youtube: document.getElementById('skip-youtube').checked,
+    skip_kdp: document.getElementById('skip-kdp').checked,
+  };
+
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${PAT}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ref: 'main', inputs }),
+    });
+
+    if (res.status === 204) {
+      showStatus('produce-status', `Pipeline triggered for "${topic}"! Refresh runs in ~10s.`, 'success');
+      setTimeout(loadRuns, 10000);
+    } else if (res.status === 401 || res.status === 403) {
+      showStatus('produce-status', 'Auth failed. Check your PAT token.', 'error');
+      doLogout();
+    } else {
+      const err = await res.json().catch(() => ({}));
+      showStatus('produce-status', `Failed: ${err.message || res.status}`, 'error');
+    }
+  } catch (e) {
+    showStatus('produce-status', `Network error: ${e.message}`, 'error');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = 'Produce';
+}
+
+// ===================================================================
+// LOAD RUNS
+// ===================================================================
+async function loadRuns() {
+  const spinner = document.getElementById('runs-spinner');
+  spinner.style.display = 'inline';
+
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=10`, {
+      headers: {
+        'Authorization': `Bearer ${PAT}`,
+        'Accept': 'application/vnd.github.v3+json',
+      },
+    });
+
+    if (!res.ok) {
+      if (res.status === 401) { doLogout(); return; }
+      throw new Error(`HTTP ${res.status}`);
+    }
+
+    const data = await res.json();
+    const tbody = document.getElementById('runs-body');
+    tbody.innerHTML = '';
+
+    if (!data.workflow_runs || data.workflow_runs.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="4" style="color:var(--muted);text-align:center">No runs yet</td></tr>';
+      spinner.style.display = 'none';
+      return;
+    }
+
+    for (const run of data.workflow_runs) {
+      const tr = document.createElement('tr');
+
+      // Topic from display_title or name
+      const topic = run.display_title || run.name || 'Unknown';
+
+      // Status badge
+      let badge = '';
+      const st = run.status;
+      const conc = run.conclusion;
+      if (st === 'completed' && conc === 'success') badge = '<span class="badge badge-success">Done</span>';
+      else if (st === 'completed' && conc === 'failure') badge = '<span class="badge badge-failed">Failed</span>';
+      else if (st === 'in_progress') badge = '<span class="badge badge-running">Running</span>';
+      else if (st === 'queued') badge = '<span class="badge badge-queued">Queued</span>';
+      else if (st === 'waiting') badge = '<span class="badge badge-pending">Waiting</span>';
+      else badge = `<span class="badge badge-pending">${conc || st}</span>`;
+
+      // Time
+      const started = new Date(run.created_at);
+      const timeStr = started.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) +
+        ' ' + started.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+      // Artifacts link
+      let artifactHtml = '';
+      if (st === 'completed' && conc === 'success') {
+        artifactHtml = `<a href="https://github.com/${REPO}/actions/runs/${run.id}" class="artifact-link">View</a>`;
+      } else if (st === 'in_progress') {
+        artifactHtml = `<a href="https://github.com/${REPO}/actions/runs/${run.id}" class="artifact-link">Logs</a>`;
+      }
+
+      tr.innerHTML = `<td>${escHtml(topic)}</td><td>${badge}</td><td>${timeStr}</td><td>${artifactHtml}</td>`;
+      tbody.appendChild(tr);
+    }
+
+    // If any runs are in_progress, auto-refresh
+    const hasRunning = data.workflow_runs.some(r => r.status === 'in_progress' || r.status === 'queued');
+    if (hasRunning) {
+      setTimeout(loadRuns, 30000);
+    }
+
+  } catch (e) {
+    document.getElementById('runs-body').innerHTML =
+      `<tr><td colspan="4" style="color:var(--danger)">${escHtml(e.message)}</td></tr>`;
+  }
+
+  spinner.style.display = 'none';
+}
+
+// ===================================================================
+// LOAD LATEST RESULT
+// ===================================================================
+async function loadLatest() {
+  try {
+    // Fetch from the repo's results/latest.json via raw content
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/results/latest.json`, {
+      headers: {
+        'Authorization': `Bearer ${PAT}`,
+        'Accept': 'application/vnd.github.v3+json',
+      },
+    });
+
+    if (!res.ok) return;
+
+    const file = await res.json();
+    const content = JSON.parse(atob(file.content));
+
+    if (content.status === 'no runs yet') return;
+
+    const card = document.getElementById('latest-card');
+    const el = document.getElementById('latest-content');
+
+    card.style.display = 'block';
+    el.innerHTML = `
+      <p><strong>Topic:</strong> ${escHtml(content.topic || 'N/A')}</p>
+      <p><strong>Status:</strong> ${escHtml(content.status || 'N/A')}</p>
+      <p><strong>Time:</strong> ${content.timestamp ? new Date(content.timestamp).toLocaleString() : 'N/A'}</p>
+    `;
+
+    if (content.youtube && Object.keys(content.youtube).length > 0) {
+      let ytHtml = '<p style="margin-top:8px"><strong>YouTube:</strong></p><ul style="margin-left:20px">';
+      for (const [label, url] of Object.entries(content.youtube)) {
+        if (url && url.includes('youtube.com')) {
+          ytHtml += `<li><a href="${escHtml(url)}" target="_blank">${escHtml(label)}</a></li>`;
+        }
+      }
+      ytHtml += '</ul>';
+      el.innerHTML += ytHtml;
+    }
+  } catch (e) {
+    // Silently fail
+  }
+}
+
+// ===================================================================
+// HELPERS
+// ===================================================================
+function showStatus(id, msg, type) {
+  const el = document.getElementById(id);
+  el.textContent = msg;
+  el.className = `status-msg show ${type}`;
+  if (type === 'success') setTimeout(() => el.classList.remove('show'), 8000);
+}
+
+function escHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+</script>
+</body>
+</html>

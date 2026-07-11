@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pickle
+*.env
+seo_cache/
+videos/
+youtube_credentials.json
+youtube_token.pickle
+tiktok_cookies.txt
+ig_browser_profile/
