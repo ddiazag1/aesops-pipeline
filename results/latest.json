@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-07-16T02:08:35.154512",
-  "topic": "description of the Planets of our solar system in order",
+  "timestamp": "2026-07-17T01:03:34.412836",
+  "topic": "THE MOST COMMON NORTHEN CONSTELLATIONS",
   "topic_type": "color",
-  "output_folder": "videos/20260716_014910_description_of_the_planets_of_our_solar_system_in_order",
+  "output_folder": "videos/20260717_005410_the_most_common_northen_constellations",
   "videos": {
-    "main": "videos/20260716_014910_description_of_the_planets_of_our_solar_system_in_order/final_bilingual.mp4",
-    "shorts": "videos/20260716_014910_description_of_the_planets_of_our_solar_system_in_order/shorts"
+    "main": "videos/20260717_005410_the_most_common_northen_constellations/final_bilingual.mp4",
+    "shorts": "videos/20260717_005410_the_most_common_northen_constellations/shorts"
   },
   "kdp": {
-    "en": "videos/20260716_014910_description_of_the_planets_of_our_solar_system_in_order/kdp/EN",
-    "es": "videos/20260716_014910_description_of_the_planets_of_our_solar_system_in_order/kdp/ES"
+    "en": "videos/20260717_005410_the_most_common_northen_constellations/kdp/EN",
+    "es": "videos/20260717_005410_the_most_common_northen_constellations/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=JjF-I14DF9Y",
-    "Short (Liam)": "https://www.youtube.com/watch?v=wDB3YjRwiaE",
-    "Short (Noah)": "https://www.youtube.com/watch?v=mLipE2uIxGs",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=FhaIMhi11eo",
-    "Short (Emma)": "https://www.youtube.com/watch?v=ICeqiQtbjm0"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=qvMvdTpKtm0",
+    "Short (Liam)": "https://www.youtube.com/watch?v=tBgYIvqPjrM",
+    "Short (Noah)": "https://www.youtube.com/watch?v=2jZtZHFTjvk",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=ku8Fk5XQs14",
+    "Short (Emma)": "https://www.youtube.com/watch?v=vLEoF5OAnb8"
   },
   "status": "completed"
 }
