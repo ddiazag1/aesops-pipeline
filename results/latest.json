@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-07-17T01:03:34.412836",
-  "topic": "THE MOST COMMON NORTHEN CONSTELLATIONS",
+  "timestamp": "2026-07-19T12:04:31.271008",
+  "topic": "LETTERS A AND B",
   "topic_type": "color",
-  "output_folder": "videos/20260717_005410_the_most_common_northen_constellations",
+  "output_folder": "videos/20260719_115429_letters_a_and_b",
   "videos": {
-    "main": "videos/20260717_005410_the_most_common_northen_constellations/final_bilingual.mp4",
-    "shorts": "videos/20260717_005410_the_most_common_northen_constellations/shorts"
+    "main": "videos/20260719_115429_letters_a_and_b/final_bilingual.mp4",
+    "shorts": "videos/20260719_115429_letters_a_and_b/shorts"
   },
   "kdp": {
-    "en": "videos/20260717_005410_the_most_common_northen_constellations/kdp/EN",
-    "es": "videos/20260717_005410_the_most_common_northen_constellations/kdp/ES"
+    "en": "videos/20260719_115429_letters_a_and_b/kdp/EN",
+    "es": "videos/20260719_115429_letters_a_and_b/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=qvMvdTpKtm0",
-    "Short (Liam)": "https://www.youtube.com/watch?v=tBgYIvqPjrM",
-    "Short (Noah)": "https://www.youtube.com/watch?v=2jZtZHFTjvk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=ku8Fk5XQs14",
-    "Short (Emma)": "https://www.youtube.com/watch?v=vLEoF5OAnb8"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=mwXr-dC-atw",
+    "Short (Liam)": "https://www.youtube.com/watch?v=0bW9yKiJD4g",
+    "Short (Noah)": "https://www.youtube.com/watch?v=Kkjh-0wKrjI",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=Q09knjsRTGQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=cBKnTYRiFeM"
   },
   "status": "completed"
 }
