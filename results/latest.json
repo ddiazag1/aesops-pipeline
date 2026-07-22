@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-07-21T19:35:25.235765",
-  "topic": "LETTERS E AND F",
+  "timestamp": "2026-07-22T23:47:56.416479",
+  "topic": "LETTER G",
   "topic_type": "color",
-  "output_folder": "videos/20260721_192605_letters_e_and_f",
+  "output_folder": "videos/20260722_233843_letter_g",
   "videos": {
-    "main": "videos/20260721_192605_letters_e_and_f/final_bilingual.mp4",
-    "shorts": "videos/20260721_192605_letters_e_and_f/shorts"
+    "main": "videos/20260722_233843_letter_g/final_bilingual.mp4",
+    "shorts": "videos/20260722_233843_letter_g/shorts"
   },
   "kdp": {
-    "en": "videos/20260721_192605_letters_e_and_f/kdp/EN",
-    "es": "videos/20260721_192605_letters_e_and_f/kdp/ES"
+    "en": "videos/20260722_233843_letter_g/kdp/EN",
+    "es": "videos/20260722_233843_letter_g/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=eddCKj9W8iA",
-    "Short (Liam)": "https://www.youtube.com/watch?v=l-VOPGMjmt8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=L5TWShlAig8",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=o4pcxRfM_98",
-    "Short (Emma)": "https://www.youtube.com/watch?v=NVynHauLqjg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=bODub0yqO6Q",
+    "Short (Liam)": "https://www.youtube.com/watch?v=FXRz9ECYM0o",
+    "Short (Noah)": "https://www.youtube.com/watch?v=NHHOhsvH4WM",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=oxmphNgQ4xE",
+    "Short (Emma)": "https://www.youtube.com/watch?v=2_7x-aS6oRY"
   },
   "status": "completed"
 }
