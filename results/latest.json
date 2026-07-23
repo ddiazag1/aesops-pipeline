@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-07-22T23:47:56.416479",
-  "topic": "LETTER G",
+  "timestamp": "2026-07-23T21:54:27.598276",
+  "topic": "LETTER H",
   "topic_type": "color",
-  "output_folder": "videos/20260722_233843_letter_g",
+  "output_folder": "videos/20260723_214557_letter_h",
   "videos": {
-    "main": "videos/20260722_233843_letter_g/final_bilingual.mp4",
-    "shorts": "videos/20260722_233843_letter_g/shorts"
+    "main": "videos/20260723_214557_letter_h/final_bilingual.mp4",
+    "shorts": "videos/20260723_214557_letter_h/shorts"
   },
   "kdp": {
-    "en": "videos/20260722_233843_letter_g/kdp/EN",
-    "es": "videos/20260722_233843_letter_g/kdp/ES"
+    "en": "videos/20260723_214557_letter_h/kdp/EN",
+    "es": "videos/20260723_214557_letter_h/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=bODub0yqO6Q",
-    "Short (Liam)": "https://www.youtube.com/watch?v=FXRz9ECYM0o",
-    "Short (Noah)": "https://www.youtube.com/watch?v=NHHOhsvH4WM",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=oxmphNgQ4xE",
-    "Short (Emma)": "https://www.youtube.com/watch?v=2_7x-aS6oRY"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=dqqJcUOeDnY",
+    "Short (Liam)": "https://www.youtube.com/watch?v=8jhUdDVGhZ0",
+    "Short (Noah)": "https://www.youtube.com/watch?v=dE7NjFXsAiI",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=9O0fBKyEFfQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=aOX0G9a_H9U"
   },
   "status": "completed"
 }
