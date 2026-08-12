@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-11T14:50:43.379039",
-  "topic": "THE LETTER Z",
+  "timestamp": "2026-08-12T16:55:48.255154",
+  "topic": "DESCRIBE DE SOLAR ECLYPSE",
   "topic_type": "color",
-  "output_folder": "videos/20260811_144150_the_letter_z",
+  "output_folder": "videos/20260812_164515_describe_de_solar_eclypse",
   "videos": {
-    "main": "videos/20260811_144150_the_letter_z/final_bilingual.mp4",
-    "shorts": "videos/20260811_144150_the_letter_z/shorts"
+    "main": "videos/20260812_164515_describe_de_solar_eclypse/final_bilingual.mp4",
+    "shorts": "videos/20260812_164515_describe_de_solar_eclypse/shorts"
   },
   "kdp": {
-    "en": "videos/20260811_144150_the_letter_z/kdp/EN",
-    "es": "videos/20260811_144150_the_letter_z/kdp/ES"
+    "en": "videos/20260812_164515_describe_de_solar_eclypse/kdp/EN",
+    "es": "videos/20260812_164515_describe_de_solar_eclypse/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=ZF4odwqMhfo",
-    "Short (Liam)": "https://www.youtube.com/watch?v=z7_o56ZYhSc",
-    "Short (Noah)": "https://www.youtube.com/watch?v=W061H0vlnrM",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=4Iyq2HLUWMY",
-    "Short (Emma)": "https://www.youtube.com/watch?v=3Tguiry5Ncs"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=yxRb84bg-zs",
+    "Short (Liam)": "https://www.youtube.com/watch?v=YE_0iojpk60",
+    "Short (Noah)": "https://www.youtube.com/watch?v=sVVVIOYDTxQ",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=1rUfbvmh0EU",
+    "Short (Emma)": "https://www.youtube.com/watch?v=7SyyQQTYmkY"
   },
   "status": "completed"
 }
