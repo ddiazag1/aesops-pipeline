@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-12T16:55:48.255154",
-  "topic": "DESCRIBE DE SOLAR ECLYPSE",
+  "timestamp": "2026-08-13T16:02:12.773403",
+  "topic": "DESCRIBE PENTAGON",
   "topic_type": "color",
-  "output_folder": "videos/20260812_164515_describe_de_solar_eclypse",
+  "output_folder": "videos/20260813_155310_describe_pentagon",
   "videos": {
-    "main": "videos/20260812_164515_describe_de_solar_eclypse/final_bilingual.mp4",
-    "shorts": "videos/20260812_164515_describe_de_solar_eclypse/shorts"
+    "main": "videos/20260813_155310_describe_pentagon/final_bilingual.mp4",
+    "shorts": "videos/20260813_155310_describe_pentagon/shorts"
   },
   "kdp": {
-    "en": "videos/20260812_164515_describe_de_solar_eclypse/kdp/EN",
-    "es": "videos/20260812_164515_describe_de_solar_eclypse/kdp/ES"
+    "en": "videos/20260813_155310_describe_pentagon/kdp/EN",
+    "es": "videos/20260813_155310_describe_pentagon/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=yxRb84bg-zs",
-    "Short (Liam)": "https://www.youtube.com/watch?v=YE_0iojpk60",
-    "Short (Noah)": "https://www.youtube.com/watch?v=sVVVIOYDTxQ",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=1rUfbvmh0EU",
-    "Short (Emma)": "https://www.youtube.com/watch?v=7SyyQQTYmkY"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=DsJWVbEX1QQ",
+    "Short (Liam)": "https://www.youtube.com/watch?v=iVJrqnPNEHg",
+    "Short (Noah)": "https://www.youtube.com/watch?v=owFagIv9G50",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=kiLA5DEqIZw",
+    "Short (Emma)": "https://www.youtube.com/watch?v=1NGZQfk0YzU"
   },
   "status": "completed"
 }
