@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-18T02:24:33.480803",
-  "topic": "DESCRIBE OCTAGON-8 BORDERS- SHAPE",
-  "topic_type": "shape",
-  "output_folder": "videos/20260818_021458_describe_octagon-8_borders-_shape",
+  "timestamp": "2026-08-18T16:33:52.867340",
+  "topic": "DESCRIBE TRIANGLE- 3 BORDERS - SHAPE",
+  "topic_type": "number",
+  "output_folder": "videos/20260818_162427_describe_triangle-_3_borders_-_shape",
   "videos": {
-    "main": "videos/20260818_021458_describe_octagon-8_borders-_shape/final_bilingual.mp4",
-    "shorts": "videos/20260818_021458_describe_octagon-8_borders-_shape/shorts"
+    "main": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/final_bilingual.mp4",
+    "shorts": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260818_021458_describe_octagon-8_borders-_shape/kdp/EN",
-    "es": "videos/20260818_021458_describe_octagon-8_borders-_shape/kdp/ES"
+    "en": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/kdp/EN",
+    "es": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=zFSA1l2e8lg",
-    "Short (Liam)": "https://www.youtube.com/watch?v=SjsX1OzXwyg",
-    "Short (Noah)": "https://www.youtube.com/watch?v=lAoSkYO6dNk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=LvxmNXafWaQ",
-    "Short (Emma)": "https://www.youtube.com/watch?v=K-9I6y0Br6o"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=uE1urF-qipg",
+    "Short (Liam)": "https://www.youtube.com/watch?v=5tDRkQ1cefc",
+    "Short (Noah)": "https://www.youtube.com/watch?v=QbRnNw6KoIU",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=xOprPuEf9EQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=83JqnL5xpRg"
   },
   "status": "completed"
 }
