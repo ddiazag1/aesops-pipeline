@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-13T17:13:08.176172",
-  "topic": "DESCRIBE HEXAGON SHAPE",
+  "timestamp": "2026-08-18T00:18:26.634245",
+  "topic": "DESCRIBE HEPTAGON OR SEPTAGON- SHAPES",
   "topic_type": "shape",
-  "output_folder": "videos/20260813_170345_describe_hexagon_shape",
+  "output_folder": "videos/20260818_000804_describe_heptagon_or_septagon-_shapes",
   "videos": {
-    "main": "videos/20260813_170345_describe_hexagon_shape/final_bilingual.mp4",
-    "shorts": "videos/20260813_170345_describe_hexagon_shape/shorts"
+    "main": "videos/20260818_000804_describe_heptagon_or_septagon-_shapes/final_bilingual.mp4",
+    "shorts": "videos/20260818_000804_describe_heptagon_or_septagon-_shapes/shorts"
   },
   "kdp": {
-    "en": "videos/20260813_170345_describe_hexagon_shape/kdp/EN",
-    "es": "videos/20260813_170345_describe_hexagon_shape/kdp/ES"
+    "en": "videos/20260818_000804_describe_heptagon_or_septagon-_shapes/kdp/EN",
+    "es": "videos/20260818_000804_describe_heptagon_or_septagon-_shapes/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=Mr-b9zQwfQI",
-    "Short (Liam)": "https://www.youtube.com/watch?v=IPugxqYmNVw",
-    "Short (Noah)": "https://www.youtube.com/watch?v=-YtlE2vT9EQ",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=51QHl-HPHYM",
-    "Short (Emma)": "https://www.youtube.com/watch?v=5vXBQTsgZwQ"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=1kbb6F8DLNo",
+    "Short (Liam)": "https://www.youtube.com/watch?v=S_g_9P-xsqY",
+    "Short (Noah)": "https://www.youtube.com/watch?v=0hq08dRqtg4",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=VOKgAtpInGA",
+    "Short (Emma)": "https://www.youtube.com/watch?v=uzl1fCxGsRo"
   },
   "status": "completed"
 }
