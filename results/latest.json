@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-18T16:33:52.867340",
-  "topic": "DESCRIBE TRIANGLE- 3 BORDERS - SHAPE",
-  "topic_type": "number",
-  "output_folder": "videos/20260818_162427_describe_triangle-_3_borders_-_shape",
+  "timestamp": "2026-08-19T02:56:47.231397",
+  "topic": "DESCRIBE OVAL SHAPE",
+  "topic_type": "shape",
+  "output_folder": "videos/20260819_024808_describe_oval_shape",
   "videos": {
-    "main": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/final_bilingual.mp4",
-    "shorts": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/shorts"
+    "main": "videos/20260819_024808_describe_oval_shape/final_bilingual.mp4",
+    "shorts": "videos/20260819_024808_describe_oval_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/kdp/EN",
-    "es": "videos/20260818_162427_describe_triangle-_3_borders_-_shape/kdp/ES"
+    "en": "videos/20260819_024808_describe_oval_shape/kdp/EN",
+    "es": "videos/20260819_024808_describe_oval_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=uE1urF-qipg",
-    "Short (Liam)": "https://www.youtube.com/watch?v=5tDRkQ1cefc",
-    "Short (Noah)": "https://www.youtube.com/watch?v=QbRnNw6KoIU",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=xOprPuEf9EQ",
-    "Short (Emma)": "https://www.youtube.com/watch?v=83JqnL5xpRg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=87pWdN6WLQQ",
+    "Short (Liam)": "https://www.youtube.com/watch?v=KJO0ow2ZSPQ",
+    "Short (Noah)": "https://www.youtube.com/watch?v=cIK_-Uhroc8",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=nXRGdk3qxWo",
+    "Short (Emma)": "https://www.youtube.com/watch?v=ORyhZtVLMNA"
   },
   "status": "completed"
 }
