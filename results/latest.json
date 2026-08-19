@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-19T02:56:47.231397",
-  "topic": "DESCRIBE OVAL SHAPE",
+  "timestamp": "2026-08-19T04:43:35.813993",
+  "topic": "DESCRIBE CIRCULAR OR SPHERICAL SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260819_024808_describe_oval_shape",
+  "output_folder": "videos/20260819_043406_describe_circular_or_spherical_shape",
   "videos": {
-    "main": "videos/20260819_024808_describe_oval_shape/final_bilingual.mp4",
-    "shorts": "videos/20260819_024808_describe_oval_shape/shorts"
+    "main": "videos/20260819_043406_describe_circular_or_spherical_shape/final_bilingual.mp4",
+    "shorts": "videos/20260819_043406_describe_circular_or_spherical_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260819_024808_describe_oval_shape/kdp/EN",
-    "es": "videos/20260819_024808_describe_oval_shape/kdp/ES"
+    "en": "videos/20260819_043406_describe_circular_or_spherical_shape/kdp/EN",
+    "es": "videos/20260819_043406_describe_circular_or_spherical_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=87pWdN6WLQQ",
-    "Short (Liam)": "https://www.youtube.com/watch?v=KJO0ow2ZSPQ",
-    "Short (Noah)": "https://www.youtube.com/watch?v=cIK_-Uhroc8",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=nXRGdk3qxWo",
-    "Short (Emma)": "https://www.youtube.com/watch?v=ORyhZtVLMNA"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=Y3dctP6ID-o",
+    "Short (Liam)": "https://www.youtube.com/watch?v=n5Qby7Nqw-4",
+    "Short (Noah)": "https://www.youtube.com/watch?v=6zbiMdRPP2Q",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=aa7KUoR_YQo",
+    "Short (Emma)": "https://www.youtube.com/watch?v=417uPW65iU8"
   },
   "status": "completed"
 }
