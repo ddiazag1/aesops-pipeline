@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-19T18:30:13.320172",
-  "topic": "DISCOVER ELLIPSE SHAPE",
-  "topic_type": "shape",
-  "output_folder": "videos/20260819_182033_discover_ellipse_shape",
+  "timestamp": "2026-08-19T22:28:42.498081",
+  "topic": "DISCOVER CUBE 3D SHAPE",
+  "topic_type": "number",
+  "output_folder": "videos/20260819_222030_discover_cube_3d_shape",
   "videos": {
-    "main": "videos/20260819_182033_discover_ellipse_shape/final_bilingual.mp4",
-    "shorts": "videos/20260819_182033_discover_ellipse_shape/shorts"
+    "main": "videos/20260819_222030_discover_cube_3d_shape/final_bilingual.mp4",
+    "shorts": "videos/20260819_222030_discover_cube_3d_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260819_182033_discover_ellipse_shape/kdp/EN",
-    "es": "videos/20260819_182033_discover_ellipse_shape/kdp/ES"
+    "en": "videos/20260819_222030_discover_cube_3d_shape/kdp/EN",
+    "es": "videos/20260819_222030_discover_cube_3d_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=Ham_N6vSXq8",
-    "Short (Liam)": "https://www.youtube.com/watch?v=tFZicjn3fV8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=Ec5ybi-ZSyk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=lT_zMKCd-jg",
-    "Short (Emma)": "https://www.youtube.com/watch?v=7pwmzqloRnY"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=tW2OyLpVRDU",
+    "Short (Liam)": "https://www.youtube.com/watch?v=TYtwHsvH4gQ",
+    "Short (Noah)": "https://www.youtube.com/watch?v=iDXCd2WwC64",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=zcnQSM7ta_c",
+    "Short (Emma)": "https://www.youtube.com/watch?v=DOnsXdhkhq8"
   },
   "status": "completed"
 }
