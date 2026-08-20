@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-20T04:04:31.312732",
-  "topic": "DISCOVER RHOMBUS SHAPE (QUADRILATERAL)",
+  "timestamp": "2026-08-20T14:52:44.088985",
+  "topic": "DISCOVER DIAMOND SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)",
+  "output_folder": "videos/20260820_144320_discover_diamond_shape",
   "videos": {
-    "main": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/final_bilingual.mp4",
-    "shorts": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/shorts"
+    "main": "videos/20260820_144320_discover_diamond_shape/final_bilingual.mp4",
+    "shorts": "videos/20260820_144320_discover_diamond_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/kdp/EN",
-    "es": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/kdp/ES"
+    "en": "videos/20260820_144320_discover_diamond_shape/kdp/EN",
+    "es": "videos/20260820_144320_discover_diamond_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=XIA9pj-xW5s",
-    "Short (Liam)": "https://www.youtube.com/watch?v=EilCkEfR6rI",
-    "Short (Noah)": "https://www.youtube.com/watch?v=r0LAMYn306U",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=xbHWTmeXqCI",
-    "Short (Emma)": "https://www.youtube.com/watch?v=SArXCsynjo0"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=0NvxsPTmveE",
+    "Short (Liam)": "https://www.youtube.com/watch?v=AIjEWehqeu0",
+    "Short (Noah)": "https://www.youtube.com/watch?v=Y18SV-lhRy0",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=QFuc8FC5iuU",
+    "Short (Emma)": "https://www.youtube.com/watch?v=XyWL7BPHhag"
   },
   "status": "completed"
 }
