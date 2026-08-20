@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-19T22:28:42.498081",
-  "topic": "DISCOVER CUBE 3D SHAPE",
-  "topic_type": "number",
-  "output_folder": "videos/20260819_222030_discover_cube_3d_shape",
+  "timestamp": "2026-08-20T04:04:31.312732",
+  "topic": "DISCOVER RHOMBUS SHAPE (QUADRILATERAL)",
+  "topic_type": "shape",
+  "output_folder": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)",
   "videos": {
-    "main": "videos/20260819_222030_discover_cube_3d_shape/final_bilingual.mp4",
-    "shorts": "videos/20260819_222030_discover_cube_3d_shape/shorts"
+    "main": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/final_bilingual.mp4",
+    "shorts": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/shorts"
   },
   "kdp": {
-    "en": "videos/20260819_222030_discover_cube_3d_shape/kdp/EN",
-    "es": "videos/20260819_222030_discover_cube_3d_shape/kdp/ES"
+    "en": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/kdp/EN",
+    "es": "videos/20260820_035407_discover_rhombus_shape_(quadrilateral)/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=tW2OyLpVRDU",
-    "Short (Liam)": "https://www.youtube.com/watch?v=TYtwHsvH4gQ",
-    "Short (Noah)": "https://www.youtube.com/watch?v=iDXCd2WwC64",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=zcnQSM7ta_c",
-    "Short (Emma)": "https://www.youtube.com/watch?v=DOnsXdhkhq8"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=XIA9pj-xW5s",
+    "Short (Liam)": "https://www.youtube.com/watch?v=EilCkEfR6rI",
+    "Short (Noah)": "https://www.youtube.com/watch?v=r0LAMYn306U",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=xbHWTmeXqCI",
+    "Short (Emma)": "https://www.youtube.com/watch?v=SArXCsynjo0"
   },
   "status": "completed"
 }
