@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-21T17:19:36.552617",
-  "topic": "DISCOVER RECTANGLE SHAPE",
+  "timestamp": "2026-08-21T19:10:57.840084",
+  "topic": "DISCOVER SPHERE SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260821_171005_discover_rectangle_shape",
+  "output_folder": "videos/20260821_190045_discover_sphere_shape",
   "videos": {
-    "main": "videos/20260821_171005_discover_rectangle_shape/final_bilingual.mp4",
-    "shorts": "videos/20260821_171005_discover_rectangle_shape/shorts"
+    "main": "videos/20260821_190045_discover_sphere_shape/final_bilingual.mp4",
+    "shorts": "videos/20260821_190045_discover_sphere_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260821_171005_discover_rectangle_shape/kdp/EN",
-    "es": "videos/20260821_171005_discover_rectangle_shape/kdp/ES"
+    "en": "videos/20260821_190045_discover_sphere_shape/kdp/EN",
+    "es": "videos/20260821_190045_discover_sphere_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=EWJaGQnc_WE",
-    "Short (Liam)": "https://www.youtube.com/watch?v=MR7odyDeLNs",
-    "Short (Noah)": "https://www.youtube.com/watch?v=_vQjaMlZihc",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=wgjqThcFhec",
-    "Short (Emma)": "https://www.youtube.com/watch?v=A3TFfhcJILw"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=laPMww8r0k0",
+    "Short (Liam)": "https://www.youtube.com/watch?v=JTTsSKfDwyk",
+    "Short (Noah)": "https://www.youtube.com/watch?v=y63od5Iplho",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=WFsmLAdp6-k",
+    "Short (Emma)": "https://www.youtube.com/watch?v=-mvk7lvw7Dg"
   },
   "status": "completed"
 }
