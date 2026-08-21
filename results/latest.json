@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-21T19:22:47.955872",
-  "topic": "DISCOVER OVAL SHAPE",
+  "timestamp": "2026-08-21T19:33:02.522038",
+  "topic": "DISCOVER CONE SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260821_191314_discover_oval_shape",
+  "output_folder": "videos/20260821_192333_discover_cone_shape",
   "videos": {
-    "main": "videos/20260821_191314_discover_oval_shape/final_bilingual.mp4",
-    "shorts": "videos/20260821_191314_discover_oval_shape/shorts"
+    "main": "videos/20260821_192333_discover_cone_shape/final_bilingual.mp4",
+    "shorts": "videos/20260821_192333_discover_cone_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260821_191314_discover_oval_shape/kdp/EN",
-    "es": "videos/20260821_191314_discover_oval_shape/kdp/ES"
+    "en": "videos/20260821_192333_discover_cone_shape/kdp/EN",
+    "es": "videos/20260821_192333_discover_cone_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=8u2vpZYLaK4",
-    "Short (Liam)": "https://www.youtube.com/watch?v=Hip174QBWZI",
-    "Short (Noah)": "https://www.youtube.com/watch?v=gC0E-II7JV8",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=fjdk3jsCd5Y",
-    "Short (Emma)": "https://www.youtube.com/watch?v=aejhzhYvr5w"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=ifZ3Pir6ZtY",
+    "Short (Liam)": "https://www.youtube.com/watch?v=xKmaFAdJaag",
+    "Short (Noah)": "https://www.youtube.com/watch?v=DxTQlAeWLuI",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=4VW3GeSS_LE",
+    "Short (Emma)": "https://www.youtube.com/watch?v=Wvm3frgwJS8"
   },
   "status": "completed"
 }
