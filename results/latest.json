@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-21T19:10:57.840084",
-  "topic": "DISCOVER SPHERE SHAPE",
+  "timestamp": "2026-08-21T19:22:47.955872",
+  "topic": "DISCOVER OVAL SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260821_190045_discover_sphere_shape",
+  "output_folder": "videos/20260821_191314_discover_oval_shape",
   "videos": {
-    "main": "videos/20260821_190045_discover_sphere_shape/final_bilingual.mp4",
-    "shorts": "videos/20260821_190045_discover_sphere_shape/shorts"
+    "main": "videos/20260821_191314_discover_oval_shape/final_bilingual.mp4",
+    "shorts": "videos/20260821_191314_discover_oval_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260821_190045_discover_sphere_shape/kdp/EN",
-    "es": "videos/20260821_190045_discover_sphere_shape/kdp/ES"
+    "en": "videos/20260821_191314_discover_oval_shape/kdp/EN",
+    "es": "videos/20260821_191314_discover_oval_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=laPMww8r0k0",
-    "Short (Liam)": "https://www.youtube.com/watch?v=JTTsSKfDwyk",
-    "Short (Noah)": "https://www.youtube.com/watch?v=y63od5Iplho",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=WFsmLAdp6-k",
-    "Short (Emma)": "https://www.youtube.com/watch?v=-mvk7lvw7Dg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=8u2vpZYLaK4",
+    "Short (Liam)": "https://www.youtube.com/watch?v=Hip174QBWZI",
+    "Short (Noah)": "https://www.youtube.com/watch?v=gC0E-II7JV8",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=fjdk3jsCd5Y",
+    "Short (Emma)": "https://www.youtube.com/watch?v=aejhzhYvr5w"
   },
   "status": "completed"
 }
