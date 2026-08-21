@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-21T20:20:51.355357",
+  "timestamp": "2026-08-21T20:42:47.858964",
   "topic": "DISCOVER RECTANGLE PRISM SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260821_201220_discover_rectangle_prism_shape",
+  "output_folder": "videos/20260821_203050_discover_rectangle_prism_shape",
   "videos": {
-    "main": "videos/20260821_201220_discover_rectangle_prism_shape/final_bilingual.mp4",
-    "shorts": "videos/20260821_201220_discover_rectangle_prism_shape/shorts"
+    "main": "videos/20260821_203050_discover_rectangle_prism_shape/final_bilingual.mp4",
+    "shorts": "videos/20260821_203050_discover_rectangle_prism_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260821_201220_discover_rectangle_prism_shape/kdp/EN",
-    "es": "videos/20260821_201220_discover_rectangle_prism_shape/kdp/ES"
+    "en": "videos/20260821_203050_discover_rectangle_prism_shape/kdp/EN",
+    "es": "videos/20260821_203050_discover_rectangle_prism_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=AEhdBDEfnNI",
-    "Short (Liam)": "https://www.youtube.com/watch?v=QS8P-UjsHk0",
-    "Short (Noah)": "https://www.youtube.com/watch?v=Kg5O4Uvc5Vk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=UU7_WXzkmVs",
-    "Short (Emma)": "https://www.youtube.com/watch?v=00wdlvvkHGY"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=ktX1Zo6UnuM",
+    "Short (Liam)": "https://www.youtube.com/watch?v=VUNq49V2JQ8",
+    "Short (Noah)": "https://www.youtube.com/watch?v=AoWh9URKupY",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=h6kuJkc7v9U",
+    "Short (Emma)": "https://www.youtube.com/watch?v=uFzg0lFcvw8"
   },
   "status": "completed"
 }
