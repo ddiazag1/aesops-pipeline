@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-22T00:33:48.303522",
-  "topic": "DISCOVER PARALLELOGRAM SHAPE",
+  "timestamp": "2026-08-25T16:40:38.291170",
+  "topic": "DISCOVER TRAPEZIUM SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260822_002407_discover_parallelogram_shape",
+  "output_folder": "videos/20260825_162604_discover_trapezium_shape",
   "videos": {
-    "main": "videos/20260822_002407_discover_parallelogram_shape/final_bilingual.mp4",
-    "shorts": "videos/20260822_002407_discover_parallelogram_shape/shorts"
+    "main": "videos/20260825_162604_discover_trapezium_shape/final_bilingual.mp4",
+    "shorts": "videos/20260825_162604_discover_trapezium_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260822_002407_discover_parallelogram_shape/kdp/EN",
-    "es": "videos/20260822_002407_discover_parallelogram_shape/kdp/ES"
+    "en": "videos/20260825_162604_discover_trapezium_shape/kdp/EN",
+    "es": "videos/20260825_162604_discover_trapezium_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=PI1NZWWDISI",
-    "Short (Liam)": "https://www.youtube.com/watch?v=oTHBm2OAxkA",
-    "Short (Noah)": "https://www.youtube.com/watch?v=gwqICC-GStE",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=TFN_p0RckvA",
-    "Short (Emma)": "https://www.youtube.com/watch?v=bBH1MZB1b9A"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=F8u1ZWyk8Qo",
+    "Short (Liam)": "https://www.youtube.com/watch?v=6buMq9FtBeo",
+    "Short (Noah)": "https://www.youtube.com/watch?v=-rpWjBkv-eE",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=jYZX5_JO5Fw",
+    "Short (Emma)": "https://www.youtube.com/watch?v=R0b1mHCIbDE"
   },
   "status": "completed"
 }
