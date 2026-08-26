@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-25T16:40:38.291170",
-  "topic": "DISCOVER TRAPEZIUM SHAPE",
+  "timestamp": "2026-08-26T17:43:46.299361",
+  "topic": "DISCOVER OCTAGON SHAPE",
   "topic_type": "shape",
-  "output_folder": "videos/20260825_162604_discover_trapezium_shape",
+  "output_folder": "videos/20260826_173353_discover_octagon_shape",
   "videos": {
-    "main": "videos/20260825_162604_discover_trapezium_shape/final_bilingual.mp4",
-    "shorts": "videos/20260825_162604_discover_trapezium_shape/shorts"
+    "main": "videos/20260826_173353_discover_octagon_shape/final_bilingual.mp4",
+    "shorts": "videos/20260826_173353_discover_octagon_shape/shorts"
   },
   "kdp": {
-    "en": "videos/20260825_162604_discover_trapezium_shape/kdp/EN",
-    "es": "videos/20260825_162604_discover_trapezium_shape/kdp/ES"
+    "en": "videos/20260826_173353_discover_octagon_shape/kdp/EN",
+    "es": "videos/20260826_173353_discover_octagon_shape/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=F8u1ZWyk8Qo",
-    "Short (Liam)": "https://www.youtube.com/watch?v=6buMq9FtBeo",
-    "Short (Noah)": "https://www.youtube.com/watch?v=-rpWjBkv-eE",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=jYZX5_JO5Fw",
-    "Short (Emma)": "https://www.youtube.com/watch?v=R0b1mHCIbDE"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=B152RxjlLNo",
+    "Short (Liam)": "https://www.youtube.com/watch?v=E-3-yeGMN28",
+    "Short (Noah)": "https://www.youtube.com/watch?v=CMEfEbrFyo0",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=Pm3l4cyBCq8",
+    "Short (Emma)": "https://www.youtube.com/watch?v=J7cjKzLHLpA"
   },
   "status": "completed"
 }
