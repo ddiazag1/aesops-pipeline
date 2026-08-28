@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T18:16:39.817029",
-  "topic": "DISCOVER NO-U-TURN SIGN- SHAPE AND COLOR - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T19:02:15.940263",
+  "topic": "DISCOVER CONSTRUCTION AND DETOUR SIGNS- SHAPE AND COLOR - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260828_180707_discover_no-u-turn_sign-_shape_and_color_-_traffic_signs",
+  "output_folder": "videos/20260828_185334_discover_construction_and_detour_signs-_shape_and_color_-_traffic_signs",
   "videos": {
-    "main": "videos/20260828_180707_discover_no-u-turn_sign-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260828_180707_discover_no-u-turn_sign-_shape_and_color_-_traffic_signs/shorts"
+    "main": "videos/20260828_185334_discover_construction_and_detour_signs-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260828_185334_discover_construction_and_detour_signs-_shape_and_color_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_180707_discover_no-u-turn_sign-_shape_and_color_-_traffic_signs/kdp/EN",
-    "es": "videos/20260828_180707_discover_no-u-turn_sign-_shape_and_color_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_185334_discover_construction_and_detour_signs-_shape_and_color_-_traffic_signs/kdp/EN",
+    "es": "videos/20260828_185334_discover_construction_and_detour_signs-_shape_and_color_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=-orQgCKOgak",
-    "Short (Liam)": "https://www.youtube.com/watch?v=Kqxb1MSapeg",
-    "Short (Noah)": "https://www.youtube.com/watch?v=6qaSOoOkWbU",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=UzdCseTFdlk",
-    "Short (Emma)": "https://www.youtube.com/watch?v=vXfAqhyt880"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=cyK8K4iFZlY",
+    "Short (Liam)": "https://www.youtube.com/watch?v=l7iBjQCSdYo",
+    "Short (Noah)": "https://www.youtube.com/watch?v=uqex4cBw6eM",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=lIkP9kf86HI",
+    "Short (Emma)": "https://www.youtube.com/watch?v=5w_7uJ4BYB0"
   },
   "status": "completed"
 }
