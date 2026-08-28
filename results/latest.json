@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T16:00:39.325980",
-  "topic": "DISCOVER SPEED LIMIT SIGN - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T16:17:29.336938",
+  "topic": "DISCOVER PEDESTRIAN CROSSING SIGN - SHAPE AND COLOR - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs",
+  "output_folder": "videos/20260828_160517_discover_pedestrian_crossing_sign_-_shape_and_color_-_traffic_sign",
   "videos": {
-    "main": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/shorts"
+    "main": "videos/20260828_160517_discover_pedestrian_crossing_sign_-_shape_and_color_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260828_160517_discover_pedestrian_crossing_sign_-_shape_and_color_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/kdp/EN",
-    "es": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_160517_discover_pedestrian_crossing_sign_-_shape_and_color_-_traffic_sign/kdp/EN",
+    "es": "videos/20260828_160517_discover_pedestrian_crossing_sign_-_shape_and_color_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=cswbyL9Uw6E",
-    "Short (Liam)": "https://www.youtube.com/watch?v=IRJNbFWmlVk",
-    "Short (Noah)": "https://www.youtube.com/watch?v=WI1hyjPXmjk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=Hn5JtPnVTuk",
-    "Short (Emma)": "https://www.youtube.com/watch?v=ty_pELVclYU"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=P0QhZ5QRpWU",
+    "Short (Liam)": "https://www.youtube.com/watch?v=rSTgpkG5gso",
+    "Short (Noah)": "https://www.youtube.com/watch?v=QFrniIoC_Ps",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=aSG9mJTbqrk",
+    "Short (Emma)": "https://www.youtube.com/watch?v=YlxIxGM9RU8"
   },
   "status": "completed"
 }
