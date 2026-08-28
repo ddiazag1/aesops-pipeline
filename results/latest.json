@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T03:43:57.172379",
-  "topic": "DISCOVER WET SIGN - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T15:47:14.195042",
+  "topic": "DISCOVER TRAFFIC LIGHT - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260828_033453_discover_wet_sign_-_traffic_signs",
+  "output_folder": "videos/20260828_153741_discover_traffic_light_-_traffic_signs",
   "videos": {
-    "main": "videos/20260828_033453_discover_wet_sign_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260828_033453_discover_wet_sign_-_traffic_signs/shorts"
+    "main": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_033453_discover_wet_sign_-_traffic_signs/kdp/EN",
-    "es": "videos/20260828_033453_discover_wet_sign_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/kdp/EN",
+    "es": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=95HH61Qu2lU",
-    "Short (Liam)": "https://www.youtube.com/watch?v=mEdUk5d-IK4",
-    "Short (Noah)": "https://www.youtube.com/watch?v=rn8a3wj6VO4",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=9h_MM-Dn47U",
-    "Short (Emma)": "https://www.youtube.com/watch?v=yDH7AZd4DmY"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=XKi4t42VBMw",
+    "Short (Liam)": "https://www.youtube.com/watch?v=TRnNvGYhC58",
+    "Short (Noah)": "https://www.youtube.com/watch?v=q96BDoNLIGs",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=EFRYXBq6YuU",
+    "Short (Emma)": "https://www.youtube.com/watch?v=CMuIqK402kI"
   },
   "status": "completed"
 }
