@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T15:47:14.195042",
-  "topic": "DISCOVER TRAFFIC LIGHT - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T16:00:39.325980",
+  "topic": "DISCOVER SPEED LIMIT SIGN - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260828_153741_discover_traffic_light_-_traffic_signs",
+  "output_folder": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs",
   "videos": {
-    "main": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/shorts"
+    "main": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/kdp/EN",
-    "es": "videos/20260828_153741_discover_traffic_light_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/kdp/EN",
+    "es": "videos/20260828_155105_discover_speed_limit_sign_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=XKi4t42VBMw",
-    "Short (Liam)": "https://www.youtube.com/watch?v=TRnNvGYhC58",
-    "Short (Noah)": "https://www.youtube.com/watch?v=q96BDoNLIGs",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=EFRYXBq6YuU",
-    "Short (Emma)": "https://www.youtube.com/watch?v=CMuIqK402kI"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=cswbyL9Uw6E",
+    "Short (Liam)": "https://www.youtube.com/watch?v=IRJNbFWmlVk",
+    "Short (Noah)": "https://www.youtube.com/watch?v=WI1hyjPXmjk",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=Hn5JtPnVTuk",
+    "Short (Emma)": "https://www.youtube.com/watch?v=ty_pELVclYU"
   },
   "status": "completed"
 }
