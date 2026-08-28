@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T21:29:57.821546",
-  "topic": "DISCOVER SPEED BUMP AHEAD SIGN - SHAPE AND COLOR - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T22:14:47.471875",
+  "topic": "DISCOVER LANE MERGE SIGN - SHAPE AND COLOR - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260828_212013_discover_speed_bump_ahead_sign_-_shape_and_color_-_traffic_signs",
+  "output_folder": "videos/20260828_220539_discover_lane_merge_sign_-_shape_and_color_-_traffic_signs",
   "videos": {
-    "main": "videos/20260828_212013_discover_speed_bump_ahead_sign_-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260828_212013_discover_speed_bump_ahead_sign_-_shape_and_color_-_traffic_signs/shorts"
+    "main": "videos/20260828_220539_discover_lane_merge_sign_-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260828_220539_discover_lane_merge_sign_-_shape_and_color_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_212013_discover_speed_bump_ahead_sign_-_shape_and_color_-_traffic_signs/kdp/EN",
-    "es": "videos/20260828_212013_discover_speed_bump_ahead_sign_-_shape_and_color_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_220539_discover_lane_merge_sign_-_shape_and_color_-_traffic_signs/kdp/EN",
+    "es": "videos/20260828_220539_discover_lane_merge_sign_-_shape_and_color_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=NMQR2lgJv2M",
-    "Short (Liam)": "https://www.youtube.com/watch?v=yeMLG-WTCMo",
-    "Short (Noah)": "https://www.youtube.com/watch?v=7Dv4EKdBDmQ",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=IptFbrnFMdg",
-    "Short (Emma)": "https://www.youtube.com/watch?v=-tBnNcbU4gs"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=8pCKs3Ycktw",
+    "Short (Liam)": "https://www.youtube.com/watch?v=WMlvVMIWXS0",
+    "Short (Noah)": "https://www.youtube.com/watch?v=ErL3W8lGVWM",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=bF6FQaOLeA0",
+    "Short (Emma)": "https://www.youtube.com/watch?v=gtqjtP5tgDU"
   },
   "status": "completed"
 }
