@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-28T16:33:22.052026",
-  "topic": "DISCOVER TRAFFIC SIGNAL AHEAD- SHAPE AND COLOR - TRAFFIC SIGN",
+  "timestamp": "2026-08-28T17:06:18.199556",
+  "topic": "DISCOVER NO PARKING SIGN- SHAPE AND COLOR - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260828_162448_discover_traffic_signal_ahead-_shape_and_color_-_traffic_sign",
+  "output_folder": "videos/20260828_165640_discover_no_parking_sign-_shape_and_color_-_traffic_sign",
   "videos": {
-    "main": "videos/20260828_162448_discover_traffic_signal_ahead-_shape_and_color_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260828_162448_discover_traffic_signal_ahead-_shape_and_color_-_traffic_sign/shorts"
+    "main": "videos/20260828_165640_discover_no_parking_sign-_shape_and_color_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260828_165640_discover_no_parking_sign-_shape_and_color_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260828_162448_discover_traffic_signal_ahead-_shape_and_color_-_traffic_sign/kdp/EN",
-    "es": "videos/20260828_162448_discover_traffic_signal_ahead-_shape_and_color_-_traffic_sign/kdp/ES"
+    "en": "videos/20260828_165640_discover_no_parking_sign-_shape_and_color_-_traffic_sign/kdp/EN",
+    "es": "videos/20260828_165640_discover_no_parking_sign-_shape_and_color_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=FA-3mp4EbkM",
-    "Short (Liam)": "https://www.youtube.com/watch?v=jkKEfl122nE",
-    "Short (Noah)": "https://www.youtube.com/watch?v=nqSG886p-kc",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=AN7G4Dd3rFs",
-    "Short (Emma)": "https://www.youtube.com/watch?v=Dbsp6WWfYR0"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=Cz2s7CjDXbY",
+    "Short (Liam)": "https://www.youtube.com/watch?v=9XBwb2VpmTo",
+    "Short (Noah)": "https://www.youtube.com/watch?v=hHYfAFaEWLE",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=HWC-D1cx1FM",
+    "Short (Emma)": "https://www.youtube.com/watch?v=NSKKOt6UJCs"
   },
   "status": "completed"
 }
