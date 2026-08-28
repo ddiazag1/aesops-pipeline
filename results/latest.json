@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-27T18:13:53.677415",
-  "topic": "DISCOVER WARNING SIGN - TRAFFIC SIGNS",
+  "timestamp": "2026-08-28T01:48:35.268528",
+  "topic": "DISCOVER YELLOWE TRAFIC SIGN - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260827_180414_discover_warning_sign_-_traffic_signs",
+  "output_folder": "videos/20260828_013958_discover_yellowe_trafic_sign_-_traffic_signs",
   "videos": {
-    "main": "videos/20260827_180414_discover_warning_sign_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260827_180414_discover_warning_sign_-_traffic_signs/shorts"
+    "main": "videos/20260828_013958_discover_yellowe_trafic_sign_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260828_013958_discover_yellowe_trafic_sign_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260827_180414_discover_warning_sign_-_traffic_signs/kdp/EN",
-    "es": "videos/20260827_180414_discover_warning_sign_-_traffic_signs/kdp/ES"
+    "en": "videos/20260828_013958_discover_yellowe_trafic_sign_-_traffic_signs/kdp/EN",
+    "es": "videos/20260828_013958_discover_yellowe_trafic_sign_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=XMPptSo8y6w",
-    "Short (Liam)": "https://www.youtube.com/watch?v=iZg2Y-pm5M0",
-    "Short (Noah)": "https://www.youtube.com/watch?v=qWsgXEVPSBw",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=OjuBRU03ifk",
-    "Short (Emma)": "https://www.youtube.com/watch?v=jwwUlEejIGA"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=euAaAnQ41Ig",
+    "Short (Liam)": "https://www.youtube.com/watch?v=l93A2m5ddGY",
+    "Short (Noah)": "https://www.youtube.com/watch?v=VSMziG3obtY",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=mdgxz5GflGU",
+    "Short (Emma)": "https://www.youtube.com/watch?v=c7CZW7boEpg"
   },
   "status": "completed"
 }
