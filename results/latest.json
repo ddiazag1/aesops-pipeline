@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-31T06:14:43.293752",
-  "topic": "DISCOVER SCHOOL ZONE SIGN - SHAPE AND COLOR - TRAFFIC SIGNS",
+  "timestamp": "2026-08-31T06:28:17.217827",
+  "topic": "DISCOVER SLIPPERY WHEN WET SIGN - SHAPE AND COLOR - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260831_060504_discover_school_zone_sign_-_shape_and_color_-_traffic_signs",
+  "output_folder": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs",
   "videos": {
-    "main": "videos/20260831_060504_discover_school_zone_sign_-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260831_060504_discover_school_zone_sign_-_shape_and_color_-_traffic_signs/shorts"
+    "main": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260831_060504_discover_school_zone_sign_-_shape_and_color_-_traffic_signs/kdp/EN",
-    "es": "videos/20260831_060504_discover_school_zone_sign_-_shape_and_color_-_traffic_signs/kdp/ES"
+    "en": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/kdp/EN",
+    "es": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=ONIa6B-GzdU",
-    "Short (Liam)": "https://www.youtube.com/watch?v=7DEfaDJNOWk",
-    "Short (Noah)": "https://www.youtube.com/watch?v=a76sZPHI2xg",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=AVVyP7t--gI",
-    "Short (Emma)": "https://www.youtube.com/watch?v=1iJdhEtDSe4"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=89XJsct9BmQ",
+    "Short (Liam)": "https://www.youtube.com/watch?v=TlPKbX3jtc4",
+    "Short (Noah)": "https://www.youtube.com/watch?v=Unhh03x_aFY",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=XOgbNvOGiPQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=mPpFYSbss-M"
   },
   "status": "completed"
 }
