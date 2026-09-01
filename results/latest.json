@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-01T15:32:57.511718",
-  "topic": "DISCOVER THE MOON- SHAPE AND COLOR",
+  "timestamp": "2026-09-01T16:00:00.787729",
+  "topic": "DISCOVER MERCURY - THE SOLAR SYSTEM",
   "topic_type": "color",
-  "output_folder": "videos/20260901_152327_discover_the_moon-_shape_and_color",
+  "output_folder": "videos/20260901_155022_discover_mercury_-_the_solar_system",
   "videos": {
-    "main": "videos/20260901_152327_discover_the_moon-_shape_and_color/final_bilingual.mp4",
-    "shorts": "videos/20260901_152327_discover_the_moon-_shape_and_color/shorts"
+    "main": "videos/20260901_155022_discover_mercury_-_the_solar_system/final_bilingual.mp4",
+    "shorts": "videos/20260901_155022_discover_mercury_-_the_solar_system/shorts"
   },
   "kdp": {
-    "en": "videos/20260901_152327_discover_the_moon-_shape_and_color/kdp/EN",
-    "es": "videos/20260901_152327_discover_the_moon-_shape_and_color/kdp/ES"
+    "en": "videos/20260901_155022_discover_mercury_-_the_solar_system/kdp/EN",
+    "es": "videos/20260901_155022_discover_mercury_-_the_solar_system/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=UprQ8vU5REA",
-    "Short (Liam)": "https://www.youtube.com/watch?v=d5Rq8Y13alA",
-    "Short (Noah)": "https://www.youtube.com/watch?v=o0yrjJDGRKk",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=tzdVQ89xVKE",
-    "Short (Emma)": "https://www.youtube.com/watch?v=_27B_5i94Z4"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=Dx9gdJ2QOo8",
+    "Short (Liam)": "https://www.youtube.com/watch?v=Y3i6O8J_77M",
+    "Short (Noah)": "https://www.youtube.com/watch?v=XHIHyaxRsOw",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=EPLyrJApswY",
+    "Short (Emma)": "https://www.youtube.com/watch?v=xc9jk0gxbVE"
   },
   "status": "completed"
 }
