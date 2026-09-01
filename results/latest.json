@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-31T06:28:17.217827",
-  "topic": "DISCOVER SLIPPERY WHEN WET SIGN - SHAPE AND COLOR - TRAFFIC SIGNS",
+  "timestamp": "2026-09-01T15:32:57.511718",
+  "topic": "DISCOVER THE MOON- SHAPE AND COLOR",
   "topic_type": "color",
-  "output_folder": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs",
+  "output_folder": "videos/20260901_152327_discover_the_moon-_shape_and_color",
   "videos": {
-    "main": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/shorts"
+    "main": "videos/20260901_152327_discover_the_moon-_shape_and_color/final_bilingual.mp4",
+    "shorts": "videos/20260901_152327_discover_the_moon-_shape_and_color/shorts"
   },
   "kdp": {
-    "en": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/kdp/EN",
-    "es": "videos/20260831_061919_discover_slippery_when_wet_sign_-_shape_and_color_-_traffic_signs/kdp/ES"
+    "en": "videos/20260901_152327_discover_the_moon-_shape_and_color/kdp/EN",
+    "es": "videos/20260901_152327_discover_the_moon-_shape_and_color/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=89XJsct9BmQ",
-    "Short (Liam)": "https://www.youtube.com/watch?v=TlPKbX3jtc4",
-    "Short (Noah)": "https://www.youtube.com/watch?v=Unhh03x_aFY",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=XOgbNvOGiPQ",
-    "Short (Emma)": "https://www.youtube.com/watch?v=mPpFYSbss-M"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=UprQ8vU5REA",
+    "Short (Liam)": "https://www.youtube.com/watch?v=d5Rq8Y13alA",
+    "Short (Noah)": "https://www.youtube.com/watch?v=o0yrjJDGRKk",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=tzdVQ89xVKE",
+    "Short (Emma)": "https://www.youtube.com/watch?v=_27B_5i94Z4"
   },
   "status": "completed"
 }
