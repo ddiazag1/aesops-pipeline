@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-01T16:00:00.787729",
-  "topic": "DISCOVER MERCURY - THE SOLAR SYSTEM",
+  "timestamp": "2026-09-01T16:11:54.071095",
+  "topic": "DISCOVER VENUS - THE SOLAR SYSTEM",
   "topic_type": "color",
-  "output_folder": "videos/20260901_155022_discover_mercury_-_the_solar_system",
+  "output_folder": "videos/20260901_160231_discover_venus_-_the_solar_system",
   "videos": {
-    "main": "videos/20260901_155022_discover_mercury_-_the_solar_system/final_bilingual.mp4",
-    "shorts": "videos/20260901_155022_discover_mercury_-_the_solar_system/shorts"
+    "main": "videos/20260901_160231_discover_venus_-_the_solar_system/final_bilingual.mp4",
+    "shorts": "videos/20260901_160231_discover_venus_-_the_solar_system/shorts"
   },
   "kdp": {
-    "en": "videos/20260901_155022_discover_mercury_-_the_solar_system/kdp/EN",
-    "es": "videos/20260901_155022_discover_mercury_-_the_solar_system/kdp/ES"
+    "en": "videos/20260901_160231_discover_venus_-_the_solar_system/kdp/EN",
+    "es": "videos/20260901_160231_discover_venus_-_the_solar_system/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=Dx9gdJ2QOo8",
-    "Short (Liam)": "https://www.youtube.com/watch?v=Y3i6O8J_77M",
-    "Short (Noah)": "https://www.youtube.com/watch?v=XHIHyaxRsOw",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=EPLyrJApswY",
-    "Short (Emma)": "https://www.youtube.com/watch?v=xc9jk0gxbVE"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=5a3K6RRBR5Q",
+    "Short (Liam)": "https://www.youtube.com/watch?v=mp5STg2EtwI",
+    "Short (Noah)": "https://www.youtube.com/watch?v=kbbAgKduc1o",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=2RBEAU8FV70",
+    "Short (Emma)": "https://www.youtube.com/watch?v=nszaGC3Vhk4"
   },
   "status": "completed"
 }
