@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-02T03:41:25.322294",
-  "topic": "DISCOVER VENUS - THE SOLAR SYSTEM",
+  "timestamp": "2026-09-03T03:34:09.680912",
+  "topic": "DISCOVER SPEED LIMIT - TRAFFIC SIGN - SHAPE AND COLOR",
   "topic_type": "color",
-  "output_folder": "videos/20260902_033314_discover_venus_-_the_solar_system",
+  "output_folder": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color",
   "videos": {
-    "main": "videos/20260902_033314_discover_venus_-_the_solar_system/final_bilingual.mp4",
-    "shorts": "videos/20260902_033314_discover_venus_-_the_solar_system/shorts"
+    "main": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/final_bilingual.mp4",
+    "shorts": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/shorts"
   },
   "kdp": {
-    "en": "videos/20260902_033314_discover_venus_-_the_solar_system/kdp/EN",
-    "es": "videos/20260902_033314_discover_venus_-_the_solar_system/kdp/ES"
+    "en": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/kdp/EN",
+    "es": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=eCApR1bmcmw",
-    "Short (Liam)": "https://www.youtube.com/watch?v=-f_mSfyCkHg",
-    "Short (Noah)": "https://www.youtube.com/watch?v=V5VlmH6Ewj0",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=-TNENePCAX8",
-    "Short (Emma)": "https://www.youtube.com/watch?v=ipcvujnX3BM"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=nooWGH9KAw0",
+    "Short (Liam)": "https://www.youtube.com/watch?v=iHCcAeN9el8",
+    "Short (Noah)": "https://www.youtube.com/watch?v=xlNoMilxTmY",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=IR2QLlAnjVo",
+    "Short (Emma)": "https://www.youtube.com/watch?v=bqI9w-TH5aQ"
   },
   "status": "completed"
 }
