@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-03T03:34:09.680912",
-  "topic": "DISCOVER SPEED LIMIT - TRAFFIC SIGN - SHAPE AND COLOR",
+  "timestamp": "2026-09-03T04:26:41.548580",
+  "topic": "DISCOVER ONCOMING TRAFFIC",
   "topic_type": "color",
-  "output_folder": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color",
+  "output_folder": "videos/20260903_041840_discover_oncoming_traffic",
   "videos": {
-    "main": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/final_bilingual.mp4",
-    "shorts": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/shorts"
+    "main": "videos/20260903_041840_discover_oncoming_traffic/final_bilingual.mp4",
+    "shorts": "videos/20260903_041840_discover_oncoming_traffic/shorts"
   },
   "kdp": {
-    "en": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/kdp/EN",
-    "es": "videos/20260903_032442_discover_speed_limit_-_traffic_sign_-_shape_and_color/kdp/ES"
+    "en": "videos/20260903_041840_discover_oncoming_traffic/kdp/EN",
+    "es": "videos/20260903_041840_discover_oncoming_traffic/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=nooWGH9KAw0",
-    "Short (Liam)": "https://www.youtube.com/watch?v=iHCcAeN9el8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=xlNoMilxTmY",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=IR2QLlAnjVo",
-    "Short (Emma)": "https://www.youtube.com/watch?v=bqI9w-TH5aQ"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=fnGY6HFkx0Q",
+    "Short (Liam)": "https://www.youtube.com/watch?v=_9B51LBd0SI",
+    "Short (Noah)": "https://www.youtube.com/watch?v=y7ADfWaYm5Q",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=vlpfA5tZku4",
+    "Short (Emma)": "https://www.youtube.com/watch?v=w1F_XSrvvQQ"
   },
   "status": "completed"
 }
