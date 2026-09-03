@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-03T04:26:41.548580",
-  "topic": "DISCOVER ONCOMING TRAFFIC",
-  "topic_type": "color",
-  "output_folder": "videos/20260903_041840_discover_oncoming_traffic",
+  "timestamp": "2026-09-03T18:47:24.382085",
+  "topic": "DISCOVER JUPITER - SOLAR SYSTEM",
+  "topic_type": "opposite",
+  "output_folder": "videos/20260903_183731_discover_jupiter_-_solar_system",
   "videos": {
-    "main": "videos/20260903_041840_discover_oncoming_traffic/final_bilingual.mp4",
-    "shorts": "videos/20260903_041840_discover_oncoming_traffic/shorts"
+    "main": "videos/20260903_183731_discover_jupiter_-_solar_system/final_bilingual.mp4",
+    "shorts": "videos/20260903_183731_discover_jupiter_-_solar_system/shorts"
   },
   "kdp": {
-    "en": "videos/20260903_041840_discover_oncoming_traffic/kdp/EN",
-    "es": "videos/20260903_041840_discover_oncoming_traffic/kdp/ES"
+    "en": "videos/20260903_183731_discover_jupiter_-_solar_system/kdp/EN",
+    "es": "videos/20260903_183731_discover_jupiter_-_solar_system/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=fnGY6HFkx0Q",
-    "Short (Liam)": "https://www.youtube.com/watch?v=_9B51LBd0SI",
-    "Short (Noah)": "https://www.youtube.com/watch?v=y7ADfWaYm5Q",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=vlpfA5tZku4",
-    "Short (Emma)": "https://www.youtube.com/watch?v=w1F_XSrvvQQ"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=pvfNOtFpRGc",
+    "Short (Liam)": "https://www.youtube.com/watch?v=QfK-Y5wjin8",
+    "Short (Noah)": "https://www.youtube.com/watch?v=K41_v7x_VQc",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=rRV-NIaXLwE",
+    "Short (Emma)": "https://www.youtube.com/watch?v=hffD120VoAs"
   },
   "status": "completed"
 }
