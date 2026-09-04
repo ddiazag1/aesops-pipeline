@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-03T18:47:24.382085",
-  "topic": "DISCOVER JUPITER - SOLAR SYSTEM",
-  "topic_type": "opposite",
-  "output_folder": "videos/20260903_183731_discover_jupiter_-_solar_system",
+  "timestamp": "2026-09-04T13:37:00.623961",
+  "topic": "DISCOVER ASTEROID ZONE - SOLAR SYSTEM",
+  "topic_type": "color",
+  "output_folder": "videos/20260904_132712_discover_asteroid_zone_-_solar_system",
   "videos": {
-    "main": "videos/20260903_183731_discover_jupiter_-_solar_system/final_bilingual.mp4",
-    "shorts": "videos/20260903_183731_discover_jupiter_-_solar_system/shorts"
+    "main": "videos/20260904_132712_discover_asteroid_zone_-_solar_system/final_bilingual.mp4",
+    "shorts": "videos/20260904_132712_discover_asteroid_zone_-_solar_system/shorts"
   },
   "kdp": {
-    "en": "videos/20260903_183731_discover_jupiter_-_solar_system/kdp/EN",
-    "es": "videos/20260903_183731_discover_jupiter_-_solar_system/kdp/ES"
+    "en": "videos/20260904_132712_discover_asteroid_zone_-_solar_system/kdp/EN",
+    "es": "videos/20260904_132712_discover_asteroid_zone_-_solar_system/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=pvfNOtFpRGc",
-    "Short (Liam)": "https://www.youtube.com/watch?v=QfK-Y5wjin8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=K41_v7x_VQc",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=rRV-NIaXLwE",
-    "Short (Emma)": "https://www.youtube.com/watch?v=hffD120VoAs"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=52Bxc1lSqI4",
+    "Short (Liam)": "https://www.youtube.com/watch?v=GQYmXxb177E",
+    "Short (Noah)": "https://www.youtube.com/watch?v=gO1RQC9chL0",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=ITwGTE2brV8",
+    "Short (Emma)": "https://www.youtube.com/watch?v=UtTnFo9238k"
   },
   "status": "completed"
 }
