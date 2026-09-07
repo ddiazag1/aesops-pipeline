@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T22:35:09.813101",
-  "topic": "DISCOVER HOSPITAL - TRAFFIC SIGNS",
+  "timestamp": "2026-09-07T22:56:20.072940",
+  "topic": "DISCOVER GAS STATION - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260907_222533_discover_hospital_-_traffic_signs",
+  "output_folder": "videos/20260907_224649_discover_gas_station_-_traffic_sign",
   "videos": {
-    "main": "videos/20260907_222533_discover_hospital_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260907_222533_discover_hospital_-_traffic_signs/shorts"
+    "main": "videos/20260907_224649_discover_gas_station_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260907_224649_discover_gas_station_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_222533_discover_hospital_-_traffic_signs/kdp/EN",
-    "es": "videos/20260907_222533_discover_hospital_-_traffic_signs/kdp/ES"
+    "en": "videos/20260907_224649_discover_gas_station_-_traffic_sign/kdp/EN",
+    "es": "videos/20260907_224649_discover_gas_station_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=8SimAO7o4rQ",
-    "Short (Liam)": "https://www.youtube.com/watch?v=qupEP2Tr4Co",
-    "Short (Noah)": "https://www.youtube.com/watch?v=CmABXn90zB4",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=rZE-Lp79lh8",
-    "Short (Emma)": "https://www.youtube.com/watch?v=sqPm-YKYjOw"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=0RezHMOeUA4",
+    "Short (Liam)": "https://www.youtube.com/watch?v=8XPPGppmnQY",
+    "Short (Noah)": "https://www.youtube.com/watch?v=Rw11k8X-cug",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=y68Iw2WSCEg",
+    "Short (Emma)": "https://www.youtube.com/watch?v=sgPDzCe-0EE"
   },
   "status": "completed"
 }
