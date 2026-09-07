@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T21:12:46.015394",
-  "topic": "DISCOVER NO PARKING - TRAFFIC SIGNS",
+  "timestamp": "2026-09-07T21:59:37.118681",
+  "topic": "DISCOVER GIVE WAY - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260907_210322_discover_no_parking_-_traffic_signs",
+  "output_folder": "videos/20260907_214944_discover_give_way_-_traffic_signs",
   "videos": {
-    "main": "videos/20260907_210322_discover_no_parking_-_traffic_signs/final_bilingual.mp4",
-    "shorts": "videos/20260907_210322_discover_no_parking_-_traffic_signs/shorts"
+    "main": "videos/20260907_214944_discover_give_way_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260907_214944_discover_give_way_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_210322_discover_no_parking_-_traffic_signs/kdp/EN",
-    "es": "videos/20260907_210322_discover_no_parking_-_traffic_signs/kdp/ES"
+    "en": "videos/20260907_214944_discover_give_way_-_traffic_signs/kdp/EN",
+    "es": "videos/20260907_214944_discover_give_way_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=cckdnZPhk04",
-    "Short (Liam)": "https://www.youtube.com/watch?v=01DEfXQBTqc",
-    "Short (Noah)": "https://www.youtube.com/watch?v=QjSgCPxOWK8",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=wr7sts7NQbk",
-    "Short (Emma)": "https://www.youtube.com/watch?v=xQ78-TMnbD8"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=K_B_cM3JVzk",
+    "Short (Liam)": "https://www.youtube.com/watch?v=COE_6IJlJ9c",
+    "Short (Noah)": "https://www.youtube.com/watch?v=hnnPPhIRA5g",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=dKh082nPrrU",
+    "Short (Emma)": "https://www.youtube.com/watch?v=0LQ4dL0MTuA"
   },
   "status": "completed"
 }
