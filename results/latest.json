@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-04T13:50:36.920310",
-  "topic": "DISCOVER ROCKET- SPACE",
+  "timestamp": "2026-09-07T04:31:46.953441",
+  "topic": "DISCOVER STOP AHEAD - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260904_134058_discover_rocket-_space",
+  "output_folder": "videos/20260907_042155_discover_stop_ahead_-_traffic_sign",
   "videos": {
-    "main": "videos/20260904_134058_discover_rocket-_space/final_bilingual.mp4",
-    "shorts": "videos/20260904_134058_discover_rocket-_space/shorts"
+    "main": "videos/20260907_042155_discover_stop_ahead_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260907_042155_discover_stop_ahead_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260904_134058_discover_rocket-_space/kdp/EN",
-    "es": "videos/20260904_134058_discover_rocket-_space/kdp/ES"
+    "en": "videos/20260907_042155_discover_stop_ahead_-_traffic_sign/kdp/EN",
+    "es": "videos/20260907_042155_discover_stop_ahead_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=L2UzrVlTNok",
-    "Short (Liam)": "https://www.youtube.com/watch?v=085P6aJYMSQ",
-    "Short (Noah)": "https://www.youtube.com/watch?v=88t4ArEzUhY",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=JgSqUJmYl7Q",
-    "Short (Emma)": "https://www.youtube.com/watch?v=flPnfKYUfy0"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=Ifcn4dxfmZM",
+    "Short (Liam)": "https://www.youtube.com/watch?v=azYUl3WF-3I",
+    "Short (Noah)": "https://www.youtube.com/watch?v=Q8KPEYc1Lms",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=m4Xnbss0TcQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=nu_rQj_y2qM"
   },
   "status": "completed"
 }
