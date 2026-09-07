@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T22:56:20.072940",
-  "topic": "DISCOVER GAS STATION - TRAFFIC SIGN",
-  "topic_type": "color",
-  "output_folder": "videos/20260907_224649_discover_gas_station_-_traffic_sign",
+  "timestamp": "2026-09-07T23:12:39.296641",
+  "topic": "DISCOVER HOTEL - TRAFFIC SIGN",
+  "topic_type": "opposite",
+  "output_folder": "videos/20260907_230356_discover_hotel_-_traffic_sign",
   "videos": {
-    "main": "videos/20260907_224649_discover_gas_station_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260907_224649_discover_gas_station_-_traffic_sign/shorts"
+    "main": "videos/20260907_230356_discover_hotel_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260907_230356_discover_hotel_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_224649_discover_gas_station_-_traffic_sign/kdp/EN",
-    "es": "videos/20260907_224649_discover_gas_station_-_traffic_sign/kdp/ES"
+    "en": "videos/20260907_230356_discover_hotel_-_traffic_sign/kdp/EN",
+    "es": "videos/20260907_230356_discover_hotel_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=0RezHMOeUA4",
-    "Short (Liam)": "https://www.youtube.com/watch?v=8XPPGppmnQY",
-    "Short (Noah)": "https://www.youtube.com/watch?v=Rw11k8X-cug",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=y68Iw2WSCEg",
-    "Short (Emma)": "https://www.youtube.com/watch?v=sgPDzCe-0EE"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=xWb3ZCqfDj8",
+    "Short (Liam)": "https://www.youtube.com/watch?v=r-A4HoP8-LA",
+    "Short (Noah)": "https://www.youtube.com/watch?v=-cnFyRkwVAA",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=GzKNB8g3Th4",
+    "Short (Emma)": "https://www.youtube.com/watch?v=wb0VGyZg6c8"
   },
   "status": "completed"
 }
