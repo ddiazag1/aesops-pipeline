@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T20:38:17.161736",
-  "topic": "DISCOVER ROAD ENDS - TRAFFIC SIGN",
+  "timestamp": "2026-09-07T21:12:46.015394",
+  "topic": "DISCOVER NO PARKING - TRAFFIC SIGNS",
   "topic_type": "color",
-  "output_folder": "videos/20260907_202943_discover_road_ends_-_traffic_sign",
+  "output_folder": "videos/20260907_210322_discover_no_parking_-_traffic_signs",
   "videos": {
-    "main": "videos/20260907_202943_discover_road_ends_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260907_202943_discover_road_ends_-_traffic_sign/shorts"
+    "main": "videos/20260907_210322_discover_no_parking_-_traffic_signs/final_bilingual.mp4",
+    "shorts": "videos/20260907_210322_discover_no_parking_-_traffic_signs/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_202943_discover_road_ends_-_traffic_sign/kdp/EN",
-    "es": "videos/20260907_202943_discover_road_ends_-_traffic_sign/kdp/ES"
+    "en": "videos/20260907_210322_discover_no_parking_-_traffic_signs/kdp/EN",
+    "es": "videos/20260907_210322_discover_no_parking_-_traffic_signs/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=xLpj1d0osuw",
-    "Short (Liam)": "https://www.youtube.com/watch?v=Br3SCqJeMQM",
-    "Short (Noah)": "https://www.youtube.com/watch?v=vly5baLiVr0",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=kvQRGqL6hUE",
-    "Short (Emma)": "https://www.youtube.com/watch?v=rZ_3-vE-LOc"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=cckdnZPhk04",
+    "Short (Liam)": "https://www.youtube.com/watch?v=01DEfXQBTqc",
+    "Short (Noah)": "https://www.youtube.com/watch?v=QjSgCPxOWK8",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=wr7sts7NQbk",
+    "Short (Emma)": "https://www.youtube.com/watch?v=xQ78-TMnbD8"
   },
   "status": "completed"
 }
