@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T20:19:14.326492",
-  "topic": "DISCOVER SLOW - TRAFFIC SIGN",
-  "topic_type": "opposite",
-  "output_folder": "videos/20260907_200943_discover_slow_-_traffic_sign",
+  "timestamp": "2026-09-07T20:38:17.161736",
+  "topic": "DISCOVER ROAD ENDS - TRAFFIC SIGN",
+  "topic_type": "color",
+  "output_folder": "videos/20260907_202943_discover_road_ends_-_traffic_sign",
   "videos": {
-    "main": "videos/20260907_200943_discover_slow_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260907_200943_discover_slow_-_traffic_sign/shorts"
+    "main": "videos/20260907_202943_discover_road_ends_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260907_202943_discover_road_ends_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_200943_discover_slow_-_traffic_sign/kdp/EN",
-    "es": "videos/20260907_200943_discover_slow_-_traffic_sign/kdp/ES"
+    "en": "videos/20260907_202943_discover_road_ends_-_traffic_sign/kdp/EN",
+    "es": "videos/20260907_202943_discover_road_ends_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=pk96JejzB6o",
-    "Short (Liam)": "https://www.youtube.com/watch?v=J_Z6jO3hAW8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=QFm0uVhFZjQ",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=i8x64BR4SiU",
-    "Short (Emma)": "https://www.youtube.com/watch?v=Bh5gV66yD4s"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=xLpj1d0osuw",
+    "Short (Liam)": "https://www.youtube.com/watch?v=Br3SCqJeMQM",
+    "Short (Noah)": "https://www.youtube.com/watch?v=vly5baLiVr0",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=kvQRGqL6hUE",
+    "Short (Emma)": "https://www.youtube.com/watch?v=rZ_3-vE-LOc"
   },
   "status": "completed"
 }
