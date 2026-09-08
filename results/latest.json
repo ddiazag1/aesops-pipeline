@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-07T23:23:17.290792",
-  "topic": "DISCOVER ONE WAY - TRAFFIC SIGN",
+  "timestamp": "2026-09-08T00:21:05.516908",
+  "topic": "DISCOVER BLUE HANDICAP SIGN - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260907_231340_discover_one_way_-_traffic_sign",
+  "output_folder": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign",
   "videos": {
-    "main": "videos/20260907_231340_discover_one_way_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260907_231340_discover_one_way_-_traffic_sign/shorts"
+    "main": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260907_231340_discover_one_way_-_traffic_sign/kdp/EN",
-    "es": "videos/20260907_231340_discover_one_way_-_traffic_sign/kdp/ES"
+    "en": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/kdp/EN",
+    "es": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=G2E3s3ARKRo",
-    "Short (Liam)": "https://www.youtube.com/watch?v=qFDgZTEpSLY",
-    "Short (Noah)": "https://www.youtube.com/watch?v=wuqnCsQefKI",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=W3LTMODJyFU",
-    "Short (Emma)": "https://www.youtube.com/watch?v=aIauVyGcj-A"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=iQv7OokkcTI",
+    "Short (Liam)": "https://www.youtube.com/watch?v=FLnPNq3pE_0",
+    "Short (Noah)": "https://www.youtube.com/watch?v=4321ibLC4K4",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=AOce2sMZ-6I",
+    "Short (Emma)": "https://www.youtube.com/watch?v=BgWd6zflutg"
   },
   "status": "completed"
 }
