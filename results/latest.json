@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-08T00:21:05.516908",
-  "topic": "DISCOVER BLUE HANDICAP SIGN - TRAFFIC SIGN",
+  "timestamp": "2026-09-08T02:52:11.071042",
+  "topic": "DISCOVER MERGE SIGN - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign",
+  "output_folder": "videos/20260908_024212_discover_merge_sign_-_traffic_sign",
   "videos": {
-    "main": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/shorts"
+    "main": "videos/20260908_024212_discover_merge_sign_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260908_024212_discover_merge_sign_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/kdp/EN",
-    "es": "videos/20260908_001151_discover_blue_handicap_sign_-_traffic_sign/kdp/ES"
+    "en": "videos/20260908_024212_discover_merge_sign_-_traffic_sign/kdp/EN",
+    "es": "videos/20260908_024212_discover_merge_sign_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=iQv7OokkcTI",
-    "Short (Liam)": "https://www.youtube.com/watch?v=FLnPNq3pE_0",
-    "Short (Noah)": "https://www.youtube.com/watch?v=4321ibLC4K4",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=AOce2sMZ-6I",
-    "Short (Emma)": "https://www.youtube.com/watch?v=BgWd6zflutg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=jSvUPJFxVAU",
+    "Short (Liam)": "https://www.youtube.com/watch?v=f2JBgDl9Q-U",
+    "Short (Noah)": "https://www.youtube.com/watch?v=UnG0q_EOtgE",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=IQYDbNKbIWk",
+    "Short (Emma)": "https://www.youtube.com/watch?v=ohg6_-0AVlk"
   },
   "status": "completed"
 }
