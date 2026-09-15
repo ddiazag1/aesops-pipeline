@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-11T04:05:53.168182",
-  "topic": "DISCOVER EVACUATION ROUTE- TRAFFIC SIGN",
+  "timestamp": "2026-09-15T00:56:06.419174",
+  "topic": "DISCOVER FREEWAY ENTRANCE- TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260911_035246_discover_evacuation_route-_traffic_sign",
+  "output_folder": "videos/20260915_004610_discover_freeway_entrance-_traffic_sign",
   "videos": {
-    "main": "videos/20260911_035246_discover_evacuation_route-_traffic_sign/final_bilingual.mp4",
-    "shorts": "videos/20260911_035246_discover_evacuation_route-_traffic_sign/shorts"
+    "main": "videos/20260915_004610_discover_freeway_entrance-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260915_004610_discover_freeway_entrance-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260911_035246_discover_evacuation_route-_traffic_sign/kdp/EN",
-    "es": "videos/20260911_035246_discover_evacuation_route-_traffic_sign/kdp/ES"
+    "en": "videos/20260915_004610_discover_freeway_entrance-_traffic_sign/kdp/EN",
+    "es": "videos/20260915_004610_discover_freeway_entrance-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=EP8uiec43SU",
-    "Short (Liam)": "https://www.youtube.com/watch?v=Fo4CK3iFCZI",
-    "Short (Noah)": "https://www.youtube.com/watch?v=pFIPVEfsUjU",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=OC2aVqiNmMY",
-    "Short (Emma)": "https://www.youtube.com/watch?v=vZzarbdYkRg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=kAYCxIRZwCg",
+    "Short (Liam)": "https://www.youtube.com/watch?v=mRJmMUkuEeY",
+    "Short (Noah)": "https://www.youtube.com/watch?v=LOxhCbs8ABY",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=qw1ewSRZaLQ",
+    "Short (Emma)": "https://www.youtube.com/watch?v=AioKvEftLKA"
   },
   "status": "completed"
 }
