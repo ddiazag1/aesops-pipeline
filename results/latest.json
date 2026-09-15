@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-15T02:31:26.165831",
-  "topic": "DISCOVER EVACUATION ROUTE - SIGN",
+  "timestamp": "2026-09-15T03:03:20.236476",
+  "topic": "DISCOVER NO HATS - SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260915_022157_discover_evacuation_route_-_sign",
+  "output_folder": "videos/20260915_025119_discover_no_hats_-_sign",
   "videos": {
-    "main": "videos/20260915_022157_discover_evacuation_route_-_sign/final_bilingual.mp4",
-    "shorts": "videos/20260915_022157_discover_evacuation_route_-_sign/shorts"
+    "main": "videos/20260915_025119_discover_no_hats_-_sign/final_bilingual.mp4",
+    "shorts": "videos/20260915_025119_discover_no_hats_-_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260915_022157_discover_evacuation_route_-_sign/kdp/EN",
-    "es": "videos/20260915_022157_discover_evacuation_route_-_sign/kdp/ES"
+    "en": "videos/20260915_025119_discover_no_hats_-_sign/kdp/EN",
+    "es": "videos/20260915_025119_discover_no_hats_-_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=UsboIyaMHvU",
-    "Short (Liam)": "https://www.youtube.com/watch?v=DS6y1oxdCd8",
-    "Short (Noah)": "https://www.youtube.com/watch?v=OnLwpYEPpfA",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=S84AFuWjnNI",
-    "Short (Emma)": "https://www.youtube.com/watch?v=TAJSAemyMuQ"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=7Apu_krQaO4",
+    "Short (Liam)": "https://www.youtube.com/watch?v=vttf0-h_Iw0",
+    "Short (Noah)": "https://www.youtube.com/watch?v=kzGVT7EDqA4",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=-_bqNrdM2Oc",
+    "Short (Emma)": "https://www.youtube.com/watch?v=WCn3FLUJD5g"
   },
   "status": "completed"
 }
