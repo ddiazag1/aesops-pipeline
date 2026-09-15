@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-15T01:06:34.778448",
-  "topic": "DISCOVER NO OUTSIDE FOOD OR DRINKS - SIGN",
+  "timestamp": "2026-09-15T02:14:42.440011",
+  "topic": "DISCOVER NO SUNGLASSES- SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260915_005740_discover_no_outside_food_or_drinks_-_sign",
+  "output_folder": "videos/20260915_020358_discover_no_sunglasses-_sign",
   "videos": {
-    "main": "videos/20260915_005740_discover_no_outside_food_or_drinks_-_sign/final_bilingual.mp4",
-    "shorts": "videos/20260915_005740_discover_no_outside_food_or_drinks_-_sign/shorts"
+    "main": "videos/20260915_020358_discover_no_sunglasses-_sign/final_bilingual.mp4",
+    "shorts": "videos/20260915_020358_discover_no_sunglasses-_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260915_005740_discover_no_outside_food_or_drinks_-_sign/kdp/EN",
-    "es": "videos/20260915_005740_discover_no_outside_food_or_drinks_-_sign/kdp/ES"
+    "en": "videos/20260915_020358_discover_no_sunglasses-_sign/kdp/EN",
+    "es": "videos/20260915_020358_discover_no_sunglasses-_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=O9kTdieuJCY",
-    "Short (Liam)": "https://www.youtube.com/watch?v=MjgRdpgiAR0",
-    "Short (Noah)": "https://www.youtube.com/watch?v=_WnIR-9Y88Q",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=FnxA0Dzr9Ng",
-    "Short (Emma)": "https://www.youtube.com/watch?v=MATk9Rcl6qk"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=UoHtxA5MZm8",
+    "Short (Liam)": "https://www.youtube.com/watch?v=rC4x6eql8Ik",
+    "Short (Noah)": "https://www.youtube.com/watch?v=x28ZcMT9XOQ",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=nEkUBqStAv0",
+    "Short (Emma)": "https://www.youtube.com/watch?v=kHpvxmFU6IE"
   },
   "status": "completed"
 }
