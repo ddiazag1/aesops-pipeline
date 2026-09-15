@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-15T03:03:20.236476",
-  "topic": "DISCOVER NO HATS - SIGN",
-  "topic_type": "color",
-  "output_folder": "videos/20260915_025119_discover_no_hats_-_sign",
+  "timestamp": "2026-09-15T03:26:03.606320",
+  "topic": "DISCOVER NO PHOTOGRAPHY - SIGN",
+  "topic_type": "opposite",
+  "output_folder": "videos/20260915_031322_discover_no_photography_-_sign",
   "videos": {
-    "main": "videos/20260915_025119_discover_no_hats_-_sign/final_bilingual.mp4",
-    "shorts": "videos/20260915_025119_discover_no_hats_-_sign/shorts"
+    "main": "videos/20260915_031322_discover_no_photography_-_sign/final_bilingual.mp4",
+    "shorts": "videos/20260915_031322_discover_no_photography_-_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260915_025119_discover_no_hats_-_sign/kdp/EN",
-    "es": "videos/20260915_025119_discover_no_hats_-_sign/kdp/ES"
+    "en": "videos/20260915_031322_discover_no_photography_-_sign/kdp/EN",
+    "es": "videos/20260915_031322_discover_no_photography_-_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=7Apu_krQaO4",
-    "Short (Liam)": "https://www.youtube.com/watch?v=vttf0-h_Iw0",
-    "Short (Noah)": "https://www.youtube.com/watch?v=kzGVT7EDqA4",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=-_bqNrdM2Oc",
-    "Short (Emma)": "https://www.youtube.com/watch?v=WCn3FLUJD5g"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=hyL-3A3w8XY",
+    "Short (Liam)": "https://www.youtube.com/watch?v=djPRw8WAxmc",
+    "Short (Noah)": "https://www.youtube.com/watch?v=KbmXHbLIcVw",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=1CyV_uJT2ks",
+    "Short (Emma)": "https://www.youtube.com/watch?v=YT_ZQ-aKgy8"
   },
   "status": "completed"
 }
