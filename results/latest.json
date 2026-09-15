@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-15T03:47:53.621637",
-  "topic": "DISCOVER NO VIDEO RECORDING - SIGN",
+  "timestamp": "2026-09-15T05:02:20.023267",
+  "topic": "DISCOVER ONE WAY - TRAFFIC SIGN",
   "topic_type": "color",
-  "output_folder": "videos/20260915_033712_discover_no_video_recording_-_sign",
+  "output_folder": "videos/20260915_045349_discover_one_way_-_traffic_sign",
   "videos": {
-    "main": "videos/20260915_033712_discover_no_video_recording_-_sign/final_bilingual.mp4",
-    "shorts": "videos/20260915_033712_discover_no_video_recording_-_sign/shorts"
+    "main": "videos/20260915_045349_discover_one_way_-_traffic_sign/final_bilingual.mp4",
+    "shorts": "videos/20260915_045349_discover_one_way_-_traffic_sign/shorts"
   },
   "kdp": {
-    "en": "videos/20260915_033712_discover_no_video_recording_-_sign/kdp/EN",
-    "es": "videos/20260915_033712_discover_no_video_recording_-_sign/kdp/ES"
+    "en": "videos/20260915_045349_discover_one_way_-_traffic_sign/kdp/EN",
+    "es": "videos/20260915_045349_discover_one_way_-_traffic_sign/kdp/ES"
   },
   "youtube": {
-    "Main (Bilingual)": "https://www.youtube.com/watch?v=JvnBX6wKGdI",
-    "Short (Liam)": "https://www.youtube.com/watch?v=1Uf0AZitMZI",
-    "Short (Noah)": "https://www.youtube.com/watch?v=vBhbvv6tF74",
-    "Short (Oliver)": "https://www.youtube.com/watch?v=dbXNOb7QJzw",
-    "Short (Emma)": "https://www.youtube.com/watch?v=6QQy95DESdg"
+    "Main (Bilingual)": "https://www.youtube.com/watch?v=1DKmxURPuoU",
+    "Short (Liam)": "https://www.youtube.com/watch?v=PXdlN-0fKZw",
+    "Short (Noah)": "https://www.youtube.com/watch?v=7MXWok3Jy-g",
+    "Short (Oliver)": "https://www.youtube.com/watch?v=lMYmaS9DtzA",
+    "Short (Emma)": "https://www.youtube.com/watch?v=xhfD06uDLwE"
   },
   "status": "completed"
 }
